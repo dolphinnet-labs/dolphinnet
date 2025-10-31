@@ -1,9 +1,9 @@
 <div align="center">
   <br />
   <br />
-  <a href="https://flexdealchain.com"><img alt="The Web3 Chain" src="./docs/assets/flexdealchain.svg" width=600></a>
+  <a href="https://flexdealchain.com"><img alt="FlexDeal Chain" src="./docs/assets/flexdealchain.svg" width=600></a>
   <br />
-  <h3><a href="https://flexdealchain.com">The Web3 Chain</a> is Ethereum, scaled.</h3>
+  <h3><a href="https://flexdealchain.com">FlexDeal Chain</a> is Ethereum, scaled.</h3>
   <br />
 </div>
 
