@@ -11,10 +11,10 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
 	"github.com/ethereum-optimism/superchain-registry/validation"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/artifacts"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/artifacts"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
 )
 
 type IntentType string

@@ -11,14 +11,14 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	gethrpc "github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/engine"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	opmetrics "github.com/roothash-pay/roothash-chain/rhs-service/metrics"
-	"github.com/roothash-pay/roothash-chain/rhs-service/rpc"
-	supervisortypes "github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/engine"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	supervisortypes "github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 type L2Source interface {
@@ -35,7 +35,7 @@ type L1Source interface {
 	L1BlockRefByHash(ctx context.Context, hash common.Hash) (eth.L1BlockRef, error)
 }
 
-// ManagedMode makes the rhs-node managed by an rhs-supervisor,
+// ManagedMode makes the fd-node managed by an fd-supervisor,
 // by serving sync work and updating the canonical chain based on instructions.
 type ManagedMode struct {
 	log log.Logger

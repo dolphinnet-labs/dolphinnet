@@ -10,11 +10,11 @@ import (
 
 	log "github.com/ethereum/go-ethereum/log"
 
-	p2p "github.com/roothash-pay/roothash-chain/fd-node/p2p"
-	p2pMocks "github.com/roothash-pay/roothash-chain/fd-node/p2p/mocks"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
+	p2p "github.com/flexdeal-chain/fd-chain/fd-node/p2p"
+	p2pMocks "github.com/flexdeal-chain/fd-chain/fd-node/p2p/mocks"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 )
 
 // PeerScorerTestSuite tests peer parameterization.

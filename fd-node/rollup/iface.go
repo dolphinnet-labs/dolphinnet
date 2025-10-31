@@ -1,6 +1,6 @@
 package rollup
 
-import "github.com/roothash-pay/roothash-chain/rhs-service/eth"
+import "github.com/flexdeal-chain/fd-chain/fd-service/eth"
 
 // SafeHeadListener is called when the safe head is updated.
 // The safe head may advance by more than one block in a single update

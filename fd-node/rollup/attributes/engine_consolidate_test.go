@@ -13,11 +13,11 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-service/predeploys"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/predeploys"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils"
 )
 
 var defaultOpConfig = &params.OptimismConfig{

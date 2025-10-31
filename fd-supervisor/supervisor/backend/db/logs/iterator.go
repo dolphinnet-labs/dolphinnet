@@ -7,8 +7,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/db/entrydb"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/db/entrydb"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 type IteratorState interface {

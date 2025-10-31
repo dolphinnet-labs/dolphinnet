@@ -5,18 +5,18 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/retry"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources/batching"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/batching"
 	"github.com/urfave/cli/v2"
 
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/common/genesis"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 )
 
 var (

@@ -7,7 +7,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 )
 
 // PrefundL2DevGenesis pre-funds accounts in the core dev genesis for testing purposes

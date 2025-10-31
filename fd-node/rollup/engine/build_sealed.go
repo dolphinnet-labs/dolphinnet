@@ -3,7 +3,7 @@ package engine
 import (
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // BuildSealedEvent is emitted by the engine when a payload finished building,

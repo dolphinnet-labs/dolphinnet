@@ -16,14 +16,14 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
-	clientTypes "github.com/roothash-pay/roothash-chain/rhs-program/client/interop/types"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l1"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/mpt"
-	hostcommon "github.com/roothash-pay/roothash-chain/rhs-program/host/common"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/kvstore"
-	hosttypes "github.com/roothash-pay/roothash-chain/rhs-program/host/types"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	clientTypes "github.com/flexdeal-chain/fd-chain/fd-program/client/interop/types"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l1"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/mpt"
+	hostcommon "github.com/flexdeal-chain/fd-chain/fd-program/host/common"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/kvstore"
+	hosttypes "github.com/flexdeal-chain/fd-chain/fd-program/host/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 var (

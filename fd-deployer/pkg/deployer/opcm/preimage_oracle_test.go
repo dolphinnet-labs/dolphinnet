@@ -6,10 +6,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/broadcaster"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/testutil"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/env"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/broadcaster"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/testutil"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/env"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 	"github.com/stretchr/testify/require"
 )
 

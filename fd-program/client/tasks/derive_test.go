@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/stretchr/testify/require"
 )
 

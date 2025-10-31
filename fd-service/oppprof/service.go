@@ -13,7 +13,7 @@ import (
 	"strconv"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/fd-service/httputil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/httputil"
 )
 
 type Service struct {

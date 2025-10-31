@@ -6,8 +6,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p"
-	opsigner "github.com/roothash-pay/roothash-chain/rhs-service/signer"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p"
+	opsigner "github.com/flexdeal-chain/fd-chain/fd-service/signer"
 )
 
 func p2pEnv(envprefix, v string) []string {

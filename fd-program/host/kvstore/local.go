@@ -6,9 +6,9 @@ import (
 	"errors"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/boot"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/config"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/boot"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/config"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 type LocalPreimageSource struct {

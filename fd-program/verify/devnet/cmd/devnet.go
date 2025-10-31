@@ -7,8 +7,8 @@ import (
 	"os"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-program/verify"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-program/verify"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 func main() {
@@ -44,7 +44,7 @@ func main() {
 		os.Exit(2)
 	}
 
-	// Apply the custom configs by running rhs-program
+	// Apply the custom configs by running fd-program
 	runner, err := verify.NewRunner(l1RpcUrl, l1RpcKind, l1BeaconUrl, l2RpcUrl, dataDir, "901", eth.ChainIDFromUInt64(901), false)
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "Failed to create runner: %v\n", err.Error())

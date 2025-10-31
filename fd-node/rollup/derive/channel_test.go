@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/andybalholm/brotli"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/klauspost/compress/zstd"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
 	"github.com/stretchr/testify/require"
 )
 

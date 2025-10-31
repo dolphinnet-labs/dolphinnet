@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"net/http"
 
-	optls "github.com/roothash-pay/roothash-chain/fd-service/tls"
+	optls "github.com/flexdeal-chain/fd-chain/fd-service/tls"
 )
 
 type config struct {

@@ -7,7 +7,7 @@ import (
 var Commands = []*cli.Command{
 	{
 		Name:   "cache",
-		Usage:  "Cleans the backing the backe of rhs-deployer for all the previous runs",
+		Usage:  "Cleans the backing the backe of fd-deployer for all the previous runs",
 		Action: CacheCLI,
 	},
 }

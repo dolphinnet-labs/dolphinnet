@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/finality"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/finality"
 	"math/big"
 	gosync "sync"
 	"time"
@@ -13,15 +13,15 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/clsync"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/engine"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/sequencing"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/sync"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/clsync"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/engine"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/sequencing"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/sync"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 // Deprecated: use eth.SyncStatus instead.
@@ -328,8 +328,8 @@ type SyncDeriver struct {
 
 	Drain func() error
 
-	// When in interop, and managed by an rhs-supervisor,
-	// the node performs a reset based on the instructions of the rhs-supervisor.
+	// When in interop, and managed by an fd-supervisor,
+	// the node performs a reset based on the instructions of the fd-supervisor.
 	ManagedMode bool
 }
 
@@ -409,7 +409,7 @@ func (s *SyncDeriver) onEngineConfirmedReset(x engine.EngineResetConfirmedEvent)
 
 func (s *SyncDeriver) onResetEvent(x rollup.ResetEvent) {
 	if s.ManagedMode {
-		s.Log.Warn("Encountered reset in Managed Mode, waiting for rhs-supervisor", "err", x.Err)
+		s.Log.Warn("Encountered reset in Managed Mode, waiting for fd-supervisor", "err", x.Err)
 		// ManagedMode will pick up the ResetEvent
 		return
 	}
@@ -420,7 +420,7 @@ func (s *SyncDeriver) onResetEvent(x rollup.ResetEvent) {
 }
 
 // SyncStep performs the sequence of encapsulated syncing steps.
-// Warning: this sequence will be broken apart as outlined in rhs-node derivers design doc.
+// Warning: this sequence will be broken apart as outlined in fd-node derivers design doc.
 func (s *SyncDeriver) SyncStep() {
 	s.Log.Debug("Sync process step")
 

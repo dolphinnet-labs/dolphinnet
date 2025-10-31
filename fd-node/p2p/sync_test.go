@@ -20,10 +20,10 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-node/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 )
 
 type mockPayloadFn func(n uint64) (*eth.ExecutionPayloadEnvelope, error)

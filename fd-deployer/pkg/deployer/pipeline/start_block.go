@@ -7,7 +7,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 )
 
 func SetStartBlockLiveStrategy(ctx context.Context, intent *state.Intent, env *Env, st *state.State, chainID common.Hash) error {

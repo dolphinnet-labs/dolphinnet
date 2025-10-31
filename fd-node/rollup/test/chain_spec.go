@@ -1,6 +1,6 @@
 package test
 
-import "github.com/roothash-pay/roothash-chain/fd-node/rollup"
+import "github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 
 // ChainSpec wraps a *rollup.ChainSpec, allowing to optionally override individual values,
 // otherwise just returning the underlying ChainSpec's values.

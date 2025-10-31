@@ -7,7 +7,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/ctxinterrupt"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ctxinterrupt"
 )
 
 type Lifecycle interface {

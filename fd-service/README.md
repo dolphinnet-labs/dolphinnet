@@ -1,10 +1,10 @@
-# `rhs-service`
+# `fd-service`
 
-Issues: [monorepo](https://github.com/roothash-pay/roothash-chain/issues?q=is%3Aissue%20state%3Aopen%20label%3AA-rhs-service)
+Issues: [monorepo](https://github.com/flexdeal-chain/fd-chain/issues?q=is%3Aissue%20state%3Aopen%20label%3AA-fd-service)
 
-Pull requests: [monorepo](https://github.com/roothash-pay/roothash-chain/pulls?q=is%3Aopen+is%3Apr+label%3AA-rhs-service)
+Pull requests: [monorepo](https://github.com/flexdeal-chain/fd-chain/pulls?q=is%3Aopen+is%3Apr+label%3AA-fd-service)
 
-`rhs-service` is a collection of Go utilities to build OP-Stack services with.
+`fd-service` is a collection of Go utilities to build OP-Stack services with.
 
 ```text
 ├── apis            - interfaces for client / server RPC and misc. APIs
@@ -49,7 +49,7 @@ Pull requests: [monorepo](https://github.com/roothash-pay/roothash-chain/pulls?q
 
 ## Usage
 
-From `rhs-service` dir:
+From `fd-service` dir:
 ```bash
 # Run Go tests
 make test
@@ -65,8 +65,8 @@ Provide solid reusable building blocks for all OP-Stack Go services.
 
 ### Vision
 
-- Remove unused utilities: `rhs-service` itself needs to stay maintainable.
-- Make all Go services consistent: `rhs-service` modules can be used to simplify and improve more Go services.
+- Remove unused utilities: `fd-service` itself needs to stay maintainable.
+- Make all Go services consistent: `fd-service` modules can be used to simplify and improve more Go services.
 
 ## Design principles
 
@@ -76,5 +76,5 @@ Provide solid reusable building blocks for all OP-Stack Go services.
 
 ## Testing
 
-Each rhs-service package has its own unit-testing.
+Each fd-service package has its own unit-testing.
 More advanced utils, such as the transaction manager, are covered in `op-e2e` as well.

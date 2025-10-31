@@ -7,13 +7,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/interop/managed"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/interop/standard"
-	"github.com/roothash-pay/roothash-chain/rhs-service/client"
-	opmetrics "github.com/roothash-pay/roothash-chain/rhs-service/metrics"
-	"github.com/roothash-pay/roothash-chain/rhs-service/rpc"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/interop/managed"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/interop/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 type Config struct {

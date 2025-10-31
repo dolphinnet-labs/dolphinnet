@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/common/genesis"
-	"github.com/roothash-pay/roothash-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 )
 
 var (

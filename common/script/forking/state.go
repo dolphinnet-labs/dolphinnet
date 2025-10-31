@@ -11,8 +11,8 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/trie/utils"
+	"github.com/flexdeal-chain/fd-chain/common/script/addresses"
 	"github.com/holiman/uint256"
-	"github.com/roothash-pay/roothash-chain/common/script/addresses"
 )
 
 type forkStateEntry struct {

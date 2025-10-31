@@ -3,7 +3,7 @@
 
 version: 2
 
-project_name: rhs-deployer
+project_name: fd-deployer
 
 before:
   hooks:
@@ -12,8 +12,8 @@ before:
 
 builds:
   - id: main
-    main: ./cmd/rhs-deployer
-    binary: rhs-deployer
+    main: ./cmd/fd-deployer
+    binary: fd-deployer
     env:
       - CGO_ENABLED=0
     goos:
@@ -32,8 +32,8 @@ builds:
     ldflags:
       - -X main.GitCommit={{ .FullCommit }}
       - -X main.GitDate={{ .CommitDate }}
-      - -X github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/version.Version={{ .Version }}
-      - -X github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/version.Meta=
+      - -X github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/version.Version={{ .Version }}
+      - -X github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/version.Meta=
 
 archives:
   - format: tar.gz
@@ -51,13 +51,13 @@ dockers:
     goarch: amd64
     dockerfile: Dockerfile.default
     image_templates:
-      - "us-docker.pkg.dev/oplabs-tools-artifacts/images/rhs-deployer:{{ .Tag }}"
+      - "us-docker.pkg.dev/oplabs-tools-artifacts/images/fd-deployer:{{ .Tag }}"
   - id: minimal
     goos: linux
     goarch: amd64
     dockerfile: Dockerfile.minimal
     image_templates:
-      - "us-docker.pkg.dev/oplabs-tools-artifacts/images/rhs-deployer:{{ .Tag }}-minimal"
+      - "us-docker.pkg.dev/oplabs-tools-artifacts/images/fd-deployer:{{ .Tag }}-minimal"
 
 changelog:
   sort: asc
@@ -73,5 +73,5 @@ release:
   make_latest: false
 
 monorepo:
-  tag_prefix: rhs-deployer/
-  dir: rhs-deployer
+  tag_prefix: fd-deployer/
+  dir: fd-deployer

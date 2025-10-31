@@ -6,7 +6,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/batching/test"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/batching/test"
 	"github.com/stretchr/testify/require"
 )
 

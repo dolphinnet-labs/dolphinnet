@@ -11,8 +11,8 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/clock"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // LaunchBalanceMetrics starts a periodic query of the balance of the supplied account and records it

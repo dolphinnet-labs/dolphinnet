@@ -11,9 +11,9 @@ import (
 	"github.com/ethereum/go-ethereum/node"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	oplog "github.com/roothash-pay/roothash-chain/fd-service/log"
-	opmetrics "github.com/roothash-pay/roothash-chain/fd-service/metrics"
-	optls "github.com/roothash-pay/roothash-chain/fd-service/tls"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	optls "github.com/flexdeal-chain/fd-chain/fd-service/tls"
 )
 
 // the root is "", since the "/" prefix is already assumed to be stripped.

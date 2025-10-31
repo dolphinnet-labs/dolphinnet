@@ -3,9 +3,9 @@ package inspect
 import (
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer"
 
-	op_service "github.com/roothash-pay/roothash-chain/rhs-service"
+	op_service "github.com/flexdeal-chain/fd-chain/fd-service"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/urfave/cli/v2"

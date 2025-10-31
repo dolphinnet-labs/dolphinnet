@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 type testCase struct {

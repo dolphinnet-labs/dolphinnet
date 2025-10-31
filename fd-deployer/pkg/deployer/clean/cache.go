@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 	"github.com/urfave/cli/v2"
 )
 

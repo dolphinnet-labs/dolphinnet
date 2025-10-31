@@ -6,7 +6,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/cliapp"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
 )
 
 var _ cliapp.Lifecycle = &Service{}

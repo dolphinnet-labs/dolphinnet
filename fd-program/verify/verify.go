@@ -16,16 +16,16 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-program/chainconfig"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/config"
-	"github.com/roothash-pay/roothash-chain/rhs-service/client"
-	"github.com/roothash-pay/roothash-chain/rhs-service/dial"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
-	"github.com/roothash-pay/roothash-chain/rhs-service/retry"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-program/chainconfig"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/config"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/dial"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 type Runner struct {
@@ -192,7 +192,7 @@ func (r *Runner) run(ctx context.Context, l1Head common.Hash, agreedBlockInfo et
 	args := []string{
 		"--log.level", "DEBUG",
 		"--network", r.network,
-		"--exec", "./bin/rhs-program-client",
+		"--exec", "./bin/fd-program-client",
 		"--datadir", r.dataDir,
 		"--l1.head", l1Head.Hex(),
 		"--l2.head", agreedBlockInfo.Hash().Hex(),
@@ -260,7 +260,7 @@ func (r *Runner) run(ctx context.Context, l1Head common.Hash, agreedBlockInfo et
 func runFaultProofProgram(ctx context.Context, args []string) error {
 	ctx, cancel := context.WithTimeout(ctx, 3*time.Hour)
 	defer cancel()
-	cmd := exec.CommandContext(ctx, "./bin/rhs-program", args...)
+	cmd := exec.CommandContext(ctx, "./bin/fd-program", args...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	return cmd.Run()

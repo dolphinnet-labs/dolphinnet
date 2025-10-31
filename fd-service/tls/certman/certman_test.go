@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/fd-service/tls/certman"
+	"github.com/flexdeal-chain/fd-chain/fd-service/tls/certman"
 )
 
 func TestValidPair(t *testing.T) {

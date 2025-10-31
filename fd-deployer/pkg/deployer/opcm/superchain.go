@@ -7,9 +7,9 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/common/script"
-	opcrypto "github.com/roothash-pay/roothash-chain/rhs-service/crypto"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/script"
+	opcrypto "github.com/flexdeal-chain/fd-chain/fd-service/crypto"
 )
 
 type DeploySuperchainInput struct {

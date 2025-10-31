@@ -9,21 +9,21 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	opnode "github.com/roothash-pay/roothash-chain/fd-node"
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
-	"github.com/roothash-pay/roothash-chain/fd-node/cmd/genesis"
-	"github.com/roothash-pay/roothash-chain/fd-node/cmd/interop"
-	"github.com/roothash-pay/roothash-chain/fd-node/cmd/networks"
-	"github.com/roothash-pay/roothash-chain/fd-node/cmd/p2p"
-	"github.com/roothash-pay/roothash-chain/fd-node/flags"
-	"github.com/roothash-pay/roothash-chain/fd-node/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-node/node"
-	"github.com/roothash-pay/roothash-chain/fd-node/version"
-	opservice "github.com/roothash-pay/roothash-chain/rhs-service"
-	"github.com/roothash-pay/roothash-chain/rhs-service/cliapp"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ctxinterrupt"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
-	"github.com/roothash-pay/roothash-chain/rhs-service/metrics/doc"
+	opnode "github.com/flexdeal-chain/fd-chain/fd-node"
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
+	"github.com/flexdeal-chain/fd-chain/fd-node/cmd/genesis"
+	"github.com/flexdeal-chain/fd-chain/fd-node/cmd/interop"
+	"github.com/flexdeal-chain/fd-chain/fd-node/cmd/networks"
+	"github.com/flexdeal-chain/fd-chain/fd-node/cmd/p2p"
+	"github.com/flexdeal-chain/fd-chain/fd-node/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-node/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-node/node"
+	"github.com/flexdeal-chain/fd-chain/fd-node/version"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ctxinterrupt"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/metrics/doc"
 )
 
 var (
@@ -42,7 +42,7 @@ func main() {
 	app := cli.NewApp()
 	app.Version = VersionWithMeta
 	app.Flags = cliapp.ProtectFlags(flags.Flags)
-	app.Name = "rhs-node"
+	app.Name = "fd-node"
 	app.Usage = "Optimism Rollup Node"
 	app.Description = "The Optimism Rollup Node derives core block inputs from L1 data and drives an external core Execution Engine to build a core chain."
 	app.Action = cliapp.LifecycleCmd(RollupNodeMain)

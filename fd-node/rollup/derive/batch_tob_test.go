@@ -3,8 +3,8 @@ package derive
 import (
 	"testing"
 
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils/fuzzerutils"
 	fuzz "github.com/google/gofuzz"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils/fuzzerutils"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,9 +5,9 @@ import (
 	"math"
 	"time"
 
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
 )
 
 // DecayToZero is the decay factor for a peer's score to zero.

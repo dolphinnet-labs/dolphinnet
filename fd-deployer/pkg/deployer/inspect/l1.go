@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/roothash-pay/roothash-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/pipeline"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/pipeline"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
 	"github.com/urfave/cli/v2"
 )
 

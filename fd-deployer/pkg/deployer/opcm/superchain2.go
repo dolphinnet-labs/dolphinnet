@@ -3,7 +3,7 @@ package opcm
 import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 )
 
 type DeploySuperchain2Input struct {

@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"

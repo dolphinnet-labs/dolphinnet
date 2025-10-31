@@ -10,16 +10,16 @@ help: ## Prints this help message
 build: build-go build-contracts ## Builds Go components and contracts-theweb3Chain
 .PHONY: build
 
-build-go: submodules rhs-node rhs-deployer## Builds rhs-node and rhs-deployer
+build-go: submodules fd-node fd-deployer## Builds fd-node and fd-deployer
 .PHONY: build-go
 
 build-contracts:
-	(cd packages/contracts-theweb3Chain && just build)
+	(cd packages/contracts-fd-chain && just build)
 .PHONY: build-contracts
 
 lint-go: ## Lints Go code with specific linters
 	golangci-lint run -E goimports,sqlclosecheck,bodyclose,asciicheck,misspell,errorlint --timeout 5m -e "errors.As" -e "errors.Is" ./...
-	golangci-lint run -E err113 --timeout 5m -e "errors.As" -e "errors.Is" ./rhs-program/client/...
+	golangci-lint run -E err113 --timeout 5m -e "errors.As" -e "errors.Is" ./fd-program/client/...
 .PHONY: lint-go
 
 lint-go-fix: ## Lints Go code with specific linters and fixes reported issues
@@ -35,7 +35,7 @@ golang-docker: ## Builds Docker images for Go components using buildx
 			--progress plain \
 			--load \
 			-f docker-bake.hcl \
-			rhs-node rhs-supervisor
+			fd-node fd-supervisor
 .PHONY: golang-docker
 
 docker-builder-clean: ## Removes the Docker buildx builder
@@ -48,13 +48,13 @@ docker-builder: ## Creates a Docker buildx builder
 .PHONY: docker-builder
 
 # add --print to dry-run
-cross-rhs-node: ## Builds cross-platform Docker image for rhs-node
+cross-fd-node: ## Builds cross-platform Docker image for fd-node
 	# We don't use a buildx builder here, and just load directly into regular docker, for convenience.
 	GIT_COMMIT=$$(git rev-parse HEAD) \
 	GIT_DATE=$$(git show -s --format='%ct') \
 	IMAGE_TAGS=$$(git rev-parse HEAD),latest \
 	PLATFORMS="linux/arm64" \
-	GIT_VERSION=$(shell tags=$$(git tag --points-at $(GITCOMMIT) | grep '^rhs-node/' | sed 's/rhs-node\///' | sort -V); \
+	GIT_VERSION=$(shell tags=$$(git tag --points-at $(GITCOMMIT) | grep '^fd-node/' | sed 's/fd-node\///' | sort -V); \
              preferred_tag=$$(echo "$$tags" | grep -v -- '-rc' | tail -n 1); \
              if [ -z "$$preferred_tag" ]; then \
                  if [ -z "$$tags" ]; then \
@@ -71,8 +71,8 @@ cross-rhs-node: ## Builds cross-platform Docker image for rhs-node
 			--load \
 			--no-cache \
 			-f docker-bake.hcl \
-			rhs-node
-.PHONY: cross-rhs-node
+			fd-node
+.PHONY: cross-fd-node
 
 contracts-theweb3Chain-docker: ## Builds Docker image for Bedrock contracts
 	IMAGE_TAGS=$$(git rev-parse HEAD),latest \
@@ -88,28 +88,28 @@ submodules: ## Updates git submodules
 .PHONY: submodules
 
 
-rhs-node: ## Builds rhs-node binary
-	just $(JUSTFLAGS) ./rhs-node/rhs-node
-.PHONY: rhs-node
+fd-node: ## Builds fd-node binary
+	just $(JUSTFLAGS) ./fd-node/fd-node
+.PHONY: fd-node
 
-generate-mocks-rhs-node: ## Generates mocks for rhs-node
-	make -C ./rhs-node generate-mocks
-.PHONY: generate-mocks-rhs-node
+generate-mocks-fd-node: ## Generates mocks for fd-node
+	make -C ./fd-node generate-mocks
+.PHONY: generate-mocks-fd-node
 
-generate-mocks-rhs-service: ## Generates mocks for rhs-service
-	make -C ./rhs-service generate-mocks
-.PHONY: generate-mocks-rhs-service
+generate-mocks-fd-service: ## Generates mocks for fd-service
+	make -C ./fd-service generate-mocks
+.PHONY: generate-mocks-fd-service
 
-rhs-deployer: ## Builds rhs-deployer binary
-	just $(JUSTFLAGS) ./rhs-deployer/build
-.PHONY: rhs-deployer
+fd-deployer: ## Builds fd-deployer binary
+	just $(JUSTFLAGS) ./fd-deployer/build
+.PHONY: fd-deployer
 
-rhs-program: ## Builds rhs-program binary
-	make -C ./rhs-program rhs-program
-.PHONY: rhs-program
+fd-program: ## Builds fd-program binary
+	make -C ./fd-program fd-program
+.PHONY: fd-program
 
 reproducible-prestate:   ## Builds reproducible-prestate binary
-	make -C ./rhs-program reproducible-prestate
+	make -C ./fd-program reproducible-prestate
 .PHONY: reproducible-prestate
 
 mod-tidy: ## Cleans up unused dependencies in Go modules
@@ -123,7 +123,7 @@ mod-tidy: ## Cleans up unused dependencies in Go modules
 
 clean: ## Removes all generated files under bin/
 	rm -rf ./bin
-	cd packages/contracts-theweb3Chain/ && forge clean
+	cd packages/contracts-fd-chain/ && forge clean
 .PHONY: clean
 
 nuke: clean ## Completely clean the project directory
@@ -131,8 +131,8 @@ nuke: clean ## Completely clean the project directory
 .PHONY: nuke
 
 test-unit: ## Runs unit tests for all components
-	make -C ./rhs-node test
-	(cd packages/contracts-theweb3Chain && just test)
+	make -C ./fd-node test
+	(cd packages/contracts-fd-chain && just test)
 .PHONY: test-unit
 
 # Remove the baseline-commit to generate a base reading & show all issues

@@ -7,23 +7,23 @@ import (
 	"os"
 	"slices"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/superutil"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-service/superutil"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
 
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
-	"github.com/roothash-pay/roothash-chain/rhs-program/chainconfig"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/boot"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/types"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
+	"github.com/flexdeal-chain/fd-chain/fd-program/chainconfig"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/boot"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/flags"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 	"github.com/urfave/cli/v2"
 )
 

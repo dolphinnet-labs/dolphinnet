@@ -5,25 +5,25 @@ ARG VERSION=v0.0.0
 RUN apk add --no-cache make gcc musl-dev linux-headers git jq bash
 
 # build op-node with the shared go.mod & go.sum files
-COPY ./rhs-node /app/rhs-node
-COPY ./rhs-service /app/rhs-service
+COPY ./fd-node /app/fd-node
+COPY ./fd-service /app/fd-service
 COPY ./common /app/common
-COPY ./rhs-supervisor /app/rhs-supervisor
-COPY ./rhs-deployer /app/rhs-deployer
+COPY ./fd-supervisor /app/fd-supervisor
+COPY ./fd-deployer /app/fd-deployer
 
 COPY ./go.mod /app/go.mod
 COPY ./go.sum /app/go.sum
 
-WORKDIR /app/rhs-node
+WORKDIR /app/fd-node
 
 RUN go mod tidy
 
 ARG TARGETOS TARGETARCH
 
-RUN go build -o bin/rhs-node ./cmd/main.go
+RUN go build -o bin/fd-node ./cmd/main.go
 
 FROM alpine:3.21
 
-COPY --from=builder /app/rhs-node/bin/rhs-node /usr/local/bin
+COPY --from=builder /app/fd-node/bin/fd-node /usr/local/bin
 
-CMD ["rhs-node"]
+CMD ["fd-node"]

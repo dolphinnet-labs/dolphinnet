@@ -6,9 +6,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/plan"
-	"github.com/roothash-pay/roothash-chain/fd-service/txplan"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/plan"
+	"github.com/flexdeal-chain/fd-chain/fd-service/txplan"
 )
 
 type Call interface {

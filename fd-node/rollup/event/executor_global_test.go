@@ -8,7 +8,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 )
 
 func TestGlobalExecutor(t *testing.T) {

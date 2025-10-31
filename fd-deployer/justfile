@@ -1,5 +1,5 @@
 build:
-    go build -o bin/rhs-deployer cmd/rhs-deployer/main.go
+    go build -o bin/fd-deployer cmd/fd-deployer/main.go
 
 build-contracts:
     just ../packages/contracts-bedrock/forge-build

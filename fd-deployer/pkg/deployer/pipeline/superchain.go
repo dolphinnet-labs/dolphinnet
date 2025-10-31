@@ -3,10 +3,10 @@ package pipeline
 import (
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/opcm"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 
-	"github.com/roothash-pay/roothash-chain/rhs-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 )
 
 func DeploySuperchain(env *Env, intent *state.Intent, st *state.State) error {

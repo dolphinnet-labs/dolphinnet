@@ -7,7 +7,7 @@ import (
 
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
 	"golang.org/x/sync/semaphore"
 )
 

@@ -32,8 +32,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 type L1Chain interface {
@@ -101,9 +101,9 @@ func currentHeads(ctx context.Context, cfg *rollup.Config, l2 L2Chain) (*FindHea
 // the finalized, unsafe and safe core blocks.
 //
 //   - The *unsafe core block*: This is the highest core block whose L1 origin is a *plausible*
-//     extension of the canonical L1 chain (as known to the rhs-node).
+//     extension of the canonical L1 chain (as known to the fd-node).
 //   - The *safe core block*: This is the highest core block whose epoch's sequencing window is
-//     complete within the canonical L1 chain (as known to the rhs-node).
+//     complete within the canonical L1 chain (as known to the fd-node).
 //   - The *finalized core block*: This is the core block which is known to be fully derived from
 //     finalized L1 block data.
 //

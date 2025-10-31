@@ -5,14 +5,14 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
-	oplog "github.com/roothash-pay/roothash-chain/fd-service/log"
-	opmetrics "github.com/roothash-pay/roothash-chain/fd-service/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-service/oppprof"
-	oprpc "github.com/roothash-pay/roothash-chain/fd-service/rpc"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/config"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/syncnode"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/oppprof"
+	oprpc "github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/config"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/syncnode"
 )
 
 const EnvVarPrefix = "OP_SUPERVISOR"
@@ -47,7 +47,7 @@ var (
 	}
 	DataDirSyncEndpointFlag = &cli.PathFlag{
 		Name:    "datadir.sync-endpoint",
-		Usage:   "rhs-supervisor endpoint to sync databases from",
+		Usage:   "fd-supervisor endpoint to sync databases from",
 		EnvVars: prefixEnvVars("DATADIR_SYNC_ENDPOINT"),
 	}
 	DependencySetFlag = &cli.PathFlag{

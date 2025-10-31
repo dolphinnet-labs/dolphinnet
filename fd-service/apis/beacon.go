@@ -3,7 +3,7 @@ package apis
 import (
 	"context"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // BeaconClient is a thin wrapper over the Beacon APIs.

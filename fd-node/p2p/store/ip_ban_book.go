@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
 	ds "github.com/ipfs/go-datastore"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
 )
 
 const (

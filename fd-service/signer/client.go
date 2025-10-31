@@ -16,9 +16,9 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	optls "github.com/roothash-pay/roothash-chain/fd-service/tls"
-	"github.com/roothash-pay/roothash-chain/fd-service/tls/certman"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	optls "github.com/flexdeal-chain/fd-chain/fd-service/tls"
+	"github.com/flexdeal-chain/fd-chain/fd-service/tls/certman"
 )
 
 type SignerClient struct {

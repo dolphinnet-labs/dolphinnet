@@ -10,7 +10,7 @@ import (
 
 	net "net"
 
-	p2p "github.com/roothash-pay/roothash-chain/fd-node/p2p"
+	p2p "github.com/flexdeal-chain/fd-chain/fd-node/p2p"
 
 	peer "github.com/libp2p/go-libp2p/core/peer"
 )

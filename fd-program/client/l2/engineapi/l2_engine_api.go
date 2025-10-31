@@ -22,8 +22,8 @@ import (
 	"github.com/ethereum/go-ethereum/eth/ethconfig"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/holiman/uint256"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
 )
 
 type EngineBackend interface {

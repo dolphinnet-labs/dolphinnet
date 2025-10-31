@@ -1,10 +1,10 @@
 package metrics
 
 import (
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	opmetrics "github.com/roothash-pay/roothash-chain/fd-service/metrics"
 )
 
 const Namespace = "op_supervisor"
@@ -83,7 +83,7 @@ func NewMetrics(procName string) *Metrics {
 		up: factory.NewGauge(prometheus.GaugeOpts{
 			Namespace: ns,
 			Name:      "up",
-			Help:      "1 if the rhs-supervisor has finished starting up",
+			Help:      "1 if the fd-supervisor has finished starting up",
 		}),
 
 		CacheSizeVec: factory.NewGaugeVec(prometheus.GaugeOpts{
@@ -140,7 +140,7 @@ func (m *Metrics) Document() []opmetrics.DocumentedMetric {
 	return m.factory.Document()
 }
 
-// RecordInfo sets a pseudo-metric that contains versioning and config info for the rhs-supervisor.
+// RecordInfo sets a pseudo-metric that contains versioning and config info for the fd-supervisor.
 func (m *Metrics) RecordInfo(version string) {
 	m.info.WithLabelValues(version).Set(1)
 }

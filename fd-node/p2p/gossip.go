@@ -20,9 +20,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	opsigner "github.com/roothash-pay/roothash-chain/rhs-service/signer"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	opsigner "github.com/flexdeal-chain/fd-chain/fd-service/signer"
 )
 
 const (

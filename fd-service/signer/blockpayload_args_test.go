@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 func TestBlockPayloadArgs(t *testing.T) {

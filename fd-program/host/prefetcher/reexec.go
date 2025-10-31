@@ -7,10 +7,10 @@ import (
 
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2"
-	hostcommon "github.com/roothash-pay/roothash-chain/rhs-program/host/common"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2"
+	hostcommon "github.com/flexdeal-chain/fd-chain/fd-program/host/common"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
 )
 
 type ProgramExecutor interface {

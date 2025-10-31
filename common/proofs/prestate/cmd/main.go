@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/roothash-pay/roothash-chain/common/proofs/prestate"
+	"github.com/flexdeal-chain/fd-chain/common/proofs/prestate"
 )
 
 type chainConfig struct {

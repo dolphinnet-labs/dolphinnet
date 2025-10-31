@@ -5,7 +5,7 @@ package mocks
 import (
 	context "context"
 
-	eth "github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	eth "github.com/flexdeal-chain/fd-chain/fd-service/eth"
 
 	mock "github.com/stretchr/testify/mock"
 )

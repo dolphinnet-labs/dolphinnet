@@ -5,16 +5,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
 
 	log "github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/fd-node/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/gating/mocks"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/multiformats/go-multiaddr"
-	"github.com/roothash-pay/roothash-chain/fd-node/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/gating/mocks"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
 	"github.com/stretchr/testify/require"
 )
 

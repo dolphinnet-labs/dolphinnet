@@ -14,9 +14,9 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethclient/gethclient"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/bindings"
-	bindingspreview "github.com/roothash-pay/roothash-chain/fd-node/bindings/preview"
-	"github.com/roothash-pay/roothash-chain/rhs-service/predeploys"
+	"github.com/flexdeal-chain/fd-chain/fd-node/bindings"
+	bindingspreview "github.com/flexdeal-chain/fd-chain/fd-node/bindings/preview"
+	"github.com/flexdeal-chain/fd-chain/fd-service/predeploys"
 )
 
 var MessagePassedTopic = crypto.Keccak256Hash([]byte("MessagePassed(uint256,address,address,uint256,uint256,bytes,bytes32)"))

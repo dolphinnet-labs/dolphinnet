@@ -1,8 +1,8 @@
 package engine
 
 import (
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // EngineState provides a read-only interfaces of the forkchoice state properties of the core Engine.

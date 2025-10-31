@@ -18,12 +18,12 @@ import (
 	"github.com/ethereum/go-ethereum/crypto/kzg4844"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-service/errutil"
 	"github.com/holiman/uint256"
-	"github.com/roothash-pay/roothash-chain/fd-service/errutil"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/retry"
-	"github.com/roothash-pay/roothash-chain/fd-service/txmgr/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-service/txmgr/metrics"
 )
 
 const (

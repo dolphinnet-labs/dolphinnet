@@ -7,7 +7,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
 )
 
 var ErrSequencerNotEnabled = errors.New("sequencer is not enabled")

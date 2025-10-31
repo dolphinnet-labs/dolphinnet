@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/client"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
 )
 
 var (

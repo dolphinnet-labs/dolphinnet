@@ -5,7 +5,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // SignedP2PBlock represents an untrusted block payload,

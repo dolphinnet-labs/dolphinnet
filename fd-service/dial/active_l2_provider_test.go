@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/fd-service/testlog"
-	"github.com/roothash-pay/roothash-chain/fd-service/testutils"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils"
 	"github.com/stretchr/testify/require"
 )
 

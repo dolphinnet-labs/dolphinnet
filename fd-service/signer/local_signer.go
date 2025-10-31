@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // LocalSigner is suitable for testing

@@ -7,8 +7,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/rpc"
 )
 
 type CLISyncNodes struct {

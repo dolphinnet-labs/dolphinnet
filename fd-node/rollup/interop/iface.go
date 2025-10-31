@@ -5,11 +5,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/interop/managed"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/interop/standard"
-	opmetrics "github.com/roothash-pay/roothash-chain/rhs-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/interop/managed"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/interop/standard"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
 )
 
 type SubSystem interface {

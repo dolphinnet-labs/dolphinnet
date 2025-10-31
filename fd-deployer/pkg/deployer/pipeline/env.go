@@ -5,20 +5,20 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/roothash-pay/roothash-chain/common/genesis"
-	"github.com/roothash-pay/roothash-chain/common/script"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/broadcaster"
-	"github.com/roothash-pay/roothash-chain/rhs-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/broadcaster"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 
-	"github.com/roothash-pay/roothash-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
 )
 
 type Env struct {
@@ -84,7 +84,7 @@ type Stage func(ctx context.Context, env *Env, bundle ArtifactsBundle, intent *s
 
 func RenderGenesisAndRollup(globalState *state.State, chainID common.Hash, useGlobalIntent *state.Intent) (*core.Genesis, *rollup.Config, error) {
 	if useGlobalIntent == nil && globalState.AppliedIntent == nil {
-		return nil, nil, fmt.Errorf("chain state is not applied - run rhs-deployer apply")
+		return nil, nil, fmt.Errorf("chain state is not applied - run fd-deployer apply")
 	}
 
 	globalIntent := useGlobalIntent

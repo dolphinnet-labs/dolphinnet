@@ -10,11 +10,11 @@ import (
 	"github.com/libp2p/go-libp2p/p2p/host/peerstore/pstoreds"
 
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 	ds "github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-datastore/sync"
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
 	"github.com/stretchr/testify/require"
 )
 

@@ -4,7 +4,7 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 )
 
 type DeployPreimageOracleInput struct {

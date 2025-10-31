@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 // RollupProvider is an interfaces for providing a RollupClient

@@ -6,7 +6,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/eth/catalyst"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 )
 
 var errNodeHalt = errors.New("opted to halt, unprepared for protocol change")
@@ -25,8 +25,8 @@ func (n *OpNode) handleProtocolVersionsUpdate(ctx context.Context) error {
 		n.log.Warn("failed to notify engine of protocol version", "err", err)
 		// engineSupport may still be available, or otherwise zero to signal as unknown
 	} else {
-		catalyst.LogProtocolVersionSupport(n.log.New("node", "rhs-node"), engineSupport, recommended, "recommended")
-		catalyst.LogProtocolVersionSupport(n.log.New("node", "rhs-node"), engineSupport, required, "required")
+		catalyst.LogProtocolVersionSupport(n.log.New("node", "fd-node"), engineSupport, recommended, "recommended")
+		catalyst.LogProtocolVersionSupport(n.log.New("node", "fd-node"), engineSupport, required, "required")
 	}
 	n.metrics.ReportProtocolVersions(local, engineSupport, recommended, required)
 	catalyst.LogProtocolVersionSupport(n.log.New("node", "engine"), local, recommended, "recommended")

@@ -11,12 +11,12 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/sync"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/sync"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 type syncStatusEnum int
@@ -262,10 +262,10 @@ func (e *EngineController) checkForkchoiceUpdatedStatus(status eth.ExecutePayloa
 	return status == eth.ExecutionValid
 }
 
-// initializeUnknowns is important to give the rhs-node EngineController engine state.
+// initializeUnknowns is important to give the fd-node EngineController engine state.
 // Pre-interop, the initial reset triggered a find-sync-start, and filled the forkchoice.
 // This still happens, but now overrides what may be initialized here.
-// Post-interop, the rhs-supervisor may diff the forkchoice state against the supervisor DB,
+// Post-interop, the fd-supervisor may diff the forkchoice state against the supervisor DB,
 // to determine where to perform the initial reset to.
 func (e *EngineController) initializeUnknowns(ctx context.Context) error {
 	if e.unsafeHead == (eth.L2BlockRef{}) {

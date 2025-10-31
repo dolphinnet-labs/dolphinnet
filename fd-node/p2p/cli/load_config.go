@@ -11,15 +11,15 @@ import (
 	"os"
 	"strings"
 
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 	ds "github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-datastore/sync"
 	leveldb "github.com/ipfs/go-ds-leveldb"
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/multiformats/go-multiaddr"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/flags"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p"
+	"github.com/flexdeal-chain/fd-chain/fd-node/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p"
 
 	"github.com/urfave/cli/v2"
 

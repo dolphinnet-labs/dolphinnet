@@ -10,14 +10,14 @@ import (
 	"github.com/ethereum/go-ethereum/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/boot"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/claim"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/interop/types"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l1"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/tasks"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/boot"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/claim"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/interop/types"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l1"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/tasks"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 var (

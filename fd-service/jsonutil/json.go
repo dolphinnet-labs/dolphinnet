@@ -8,7 +8,7 @@ import (
 
 	"github.com/BurntSushi/toml"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
 )
 
 type Decoder interface {

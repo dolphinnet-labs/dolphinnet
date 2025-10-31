@@ -10,10 +10,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethTypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/predeploys"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/predeploys"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 var logProcessorChainID = eth.ChainIDFromUInt64(4)

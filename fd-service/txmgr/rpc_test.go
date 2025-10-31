@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/rpc"
-	oprpc "github.com/roothash-pay/roothash-chain/fd-service/rpc"
+	oprpc "github.com/flexdeal-chain/fd-chain/fd-service/rpc"
 	"github.com/stretchr/testify/require"
 )
 

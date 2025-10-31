@@ -9,9 +9,9 @@ import (
 	gethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	opmetrics "github.com/roothash-pay/roothash-chain/fd-service/metrics"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 type SyncNodeCollection interface {

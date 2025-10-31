@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 type L1BlockRefByNumber interface {

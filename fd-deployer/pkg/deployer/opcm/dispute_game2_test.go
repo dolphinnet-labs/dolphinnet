@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/common/script"
-	"github.com/roothash-pay/roothash-chain/common/script/addresses"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/opcm"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/script/addresses"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
 	"github.com/stretchr/testify/require"
 )
 

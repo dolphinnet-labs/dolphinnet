@@ -85,10 +85,10 @@ COPY --from=cannon-builder-v1-3-0 /usr/local/bin/cannon-4 ./cannon/multicannon/e
 RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd cannon && make cannon  \
   GOOS=$TARGETOS GOARCH=$TARGETARCH GITCOMMIT=$GIT_COMMIT GITDATE=$GIT_DATE VERSION="$CANNON_VERSION"
 
-FROM --platform=$BUILDPLATFORM builder AS rhs-program-builder
+FROM --platform=$BUILDPLATFORM builder AS fd-program-builder
 ARG OP_PROGRAM_VERSION=v0.0.0
 # note: we only build the host, that's all the user needs. No Go MIPS cross-build in docker
-RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd rhs-program && make rhs-program-host  \
+RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd fd-program && make fd-program-host  \
   GOOS=$TARGETOS GOARCH=$TARGETARCH GITCOMMIT=$GIT_COMMIT GITDATE=$GIT_DATE VERSION="$OP_PROGRAM_VERSION"
 
 FROM --platform=$BUILDPLATFORM builder AS op-wheel-builder
@@ -96,9 +96,9 @@ ARG OP_WHEEL_VERSION=v0.0.0
 RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd op-wheel && make op-wheel  \
   GOOS=$TARGETOS GOARCH=$TARGETARCH GITCOMMIT=$GIT_COMMIT GITDATE=$GIT_DATE  VERSION="$OP_WHEEL_VERSION"
 
-FROM --platform=$BUILDPLATFORM builder AS rhs-node-builder
+FROM --platform=$BUILDPLATFORM builder AS fd-node-builder
 ARG OP_NODE_VERSION=v0.0.0
-RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd rhs-node && make rhs-node  \
+RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd fd-node && make fd-node  \
   GOOS=$TARGETOS GOARCH=$TARGETARCH GITCOMMIT=$GIT_COMMIT GITDATE=$GIT_DATE VERSION="$OP_NODE_VERSION"
 
 FROM --platform=$BUILDPLATFORM builder AS op-challenger-builder
@@ -130,14 +130,14 @@ FROM --platform=$BUILDPLATFORM builder AS da-server-builder
 RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd op-alt-da && make da-server  \
   GOOS=$TARGETOS GOARCH=$TARGETARCH GITCOMMIT=$GIT_COMMIT GITDATE=$GIT_DATE
 
-FROM --platform=$BUILDPLATFORM builder AS rhs-supervisor-builder
+FROM --platform=$BUILDPLATFORM builder AS fd-supervisor-builder
 ARG OP_SUPERVISOR_VERSION=v0.0.0
-RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd rhs-supervisor && make rhs-supervisor  \
+RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd fd-supervisor && make fd-supervisor  \
   GOOS=$TARGETOS GOARCH=$TARGETARCH GITCOMMIT=$GIT_COMMIT GITDATE=$GIT_DATE  VERSION="$OP_SUPERVISOR_VERSION"
 
-FROM --platform=$BUILDPLATFORM builder AS rhs-deployer-builder
+FROM --platform=$BUILDPLATFORM builder AS fd-deployer-builder
 ARG OP_NODE_VERSION=v0.0.0
-RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd op-chain-ops && make rhs-deployer  \
+RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache/go-build cd op-chain-ops && make fd-deployer  \
   GOOS=$TARGETOS GOARCH=$TARGETARCH GITCOMMIT=$GIT_COMMIT GITDATE=$GIT_DATE VERSION="$OP_DEPLOYER_VERSION"
 
 FROM --platform=$BUILDPLATFORM builder AS op-dripper-builder
@@ -150,17 +150,17 @@ COPY --from=cannon-builder /app/cannon/bin/cannon /usr/local/bin/
 COPY --from=cannon-builder /app/cannon/multicannon/embeds/* /usr/local/bin/
 CMD ["cannon"]
 
-FROM $TARGET_BASE_IMAGE AS rhs-program-target
-COPY --from=rhs-program-builder /app/rhs-program/bin/rhs-program /usr/local/bin/
-CMD ["rhs-program"]
+FROM $TARGET_BASE_IMAGE AS fd-program-target
+COPY --from=fd-program-builder /app/fd-program/bin/fd-program /usr/local/bin/
+CMD ["fd-program"]
 
 FROM $TARGET_BASE_IMAGE AS op-wheel-target
 COPY --from=op-wheel-builder /app/op-wheel/bin/op-wheel /usr/local/bin/
 CMD ["op-wheel"]
 
-FROM $TARGET_BASE_IMAGE AS rhs-node-target
-COPY --from=rhs-node-builder /app/rhs-node/bin/rhs-node /usr/local/bin/
-CMD ["rhs-node"]
+FROM $TARGET_BASE_IMAGE AS fd-node-target
+COPY --from=fd-node-builder /app/fd-node/bin/fd-node /usr/local/bin/
+CMD ["fd-node"]
 
 # Make the kona docker image published by upstream available as a source to copy kona from.
 FROM ghcr.io/op-rs/kona/kona-host:$KONA_VERSION AS kona
@@ -171,9 +171,9 @@ FROM us-docker.pkg.dev/oplabs-tools-artifacts/images/asterisc:$ASTERISC_VERSION 
 FROM $UBUNTU_TARGET_BASE_IMAGE AS op-challenger-target
 RUN apt-get update && apt-get install -y --no-install-recommends musl openssl ca-certificates
 COPY --from=op-challenger-builder /app/op-challenger/bin/op-challenger /usr/local/bin/
-# Copy in rhs-program and cannon
-COPY --from=rhs-program-builder /app/rhs-program/bin/rhs-program /usr/local/bin/
-ENV OP_CHALLENGER_CANNON_SERVER=/usr/local/bin/rhs-program
+# Copy in fd-program and cannon
+COPY --from=fd-program-builder /app/fd-program/bin/fd-program /usr/local/bin/
+ENV OP_CHALLENGER_CANNON_SERVER=/usr/local/bin/fd-program
 COPY --from=cannon-builder /app/cannon/bin/cannon /usr/local/bin/
 ENV OP_CHALLENGER_CANNON_BIN=/usr/local/bin/cannon
 # Copy in kona and asterisc
@@ -203,13 +203,13 @@ FROM $TARGET_BASE_IMAGE AS da-server-target
 COPY --from=da-server-builder /app/op-alt-da/bin/da-server /usr/local/bin/
 CMD ["da-server"]
 
-FROM $TARGET_BASE_IMAGE AS rhs-supervisor-target
-COPY --from=rhs-supervisor-builder /app/rhs-supervisor/bin/rhs-supervisor /usr/local/bin/
-CMD ["rhs-supervisor"]
+FROM $TARGET_BASE_IMAGE AS fd-supervisor-target
+COPY --from=fd-supervisor-builder /app/fd-supervisor/bin/fd-supervisor /usr/local/bin/
+CMD ["fd-supervisor"]
 
-FROM $TARGET_BASE_IMAGE AS rhs-deployer-target
-COPY --from=rhs-deployer-builder /app/op-chain-ops/bin/rhs-deployer /usr/local/bin/
-CMD ["rhs-deployer"]
+FROM $TARGET_BASE_IMAGE AS fd-deployer-target
+COPY --from=fd-deployer-builder /app/op-chain-ops/bin/fd-deployer /usr/local/bin/
+CMD ["fd-deployer"]
 
 FROM $TARGET_BASE_IMAGE AS op-dripper-target
 COPY --from=op-dripper-builder /app/op-dripper/bin/op-dripper /usr/local/bin/

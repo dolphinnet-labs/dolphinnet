@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/db/fromda"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/db/logs"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/db/fromda"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/db/logs"
 )
 
 func OpenLogDB(logger log.Logger, chainID eth.ChainID, dataDir string, m logs.Metrics) (*logs.DB, error) {

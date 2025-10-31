@@ -4,7 +4,7 @@ import (
 	"errors"
 	"math"
 
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
 	"github.com/urfave/cli/v2"
 )
 

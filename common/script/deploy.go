@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/script/addresses"
 	"github.com/holiman/uint256"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/common/script/addresses"
 
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"

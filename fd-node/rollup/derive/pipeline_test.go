@@ -1,6 +1,6 @@
 package derive
 
-import "github.com/roothash-pay/roothash-chain/rhs-service/testutils"
+import "github.com/flexdeal-chain/fd-chain/fd-service/testutils"
 
 var _ L1Fetcher = (*testutils.MockL1Source)(nil)
 

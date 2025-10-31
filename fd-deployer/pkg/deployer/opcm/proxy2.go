@@ -2,7 +2,7 @@ package opcm
 
 import (
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 )
 
 type DeployProxy2Input struct {

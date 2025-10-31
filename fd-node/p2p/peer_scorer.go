@@ -3,12 +3,12 @@ package p2p
 import (
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 
 	log "github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	peer "github.com/libp2p/go-libp2p/core/peer"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
 )
 
 type scorer struct {

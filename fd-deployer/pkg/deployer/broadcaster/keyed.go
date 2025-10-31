@@ -9,17 +9,17 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/common/script"
+	opcrypto "github.com/flexdeal-chain/fd-chain/fd-service/crypto"
+	"github.com/flexdeal-chain/fd-chain/fd-service/txmgr"
+	"github.com/flexdeal-chain/fd-chain/fd-service/txmgr/metrics"
 	"github.com/hashicorp/go-multierror"
-	"github.com/roothash-pay/roothash-chain/common/script"
-	opcrypto "github.com/roothash-pay/roothash-chain/rhs-service/crypto"
-	"github.com/roothash-pay/roothash-chain/rhs-service/txmgr"
-	"github.com/roothash-pay/roothash-chain/rhs-service/txmgr/metrics"
 )
 
 const (

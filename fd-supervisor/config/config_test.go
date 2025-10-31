@@ -3,14 +3,14 @@ package config
 import (
 	"testing"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/stretchr/testify/require"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-service/oppprof"
-	"github.com/roothash-pay/roothash-chain/fd-service/rpc"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/syncnode"
+	"github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/oppprof"
+	"github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/syncnode"
 )
 
 func TestDefaultConfigIsValid(t *testing.T) {

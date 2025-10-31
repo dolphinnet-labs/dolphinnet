@@ -3,12 +3,12 @@ package config
 import (
 	"errors"
 
-	oplog "github.com/roothash-pay/roothash-chain/fd-service/log"
-	opmetrics "github.com/roothash-pay/roothash-chain/fd-service/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-service/oppprof"
-	oprpc "github.com/roothash-pay/roothash-chain/fd-service/rpc"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/syncnode"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/oppprof"
+	oprpc "github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/syncnode"
 )
 
 var (

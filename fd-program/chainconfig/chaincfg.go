@@ -8,14 +8,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/superutil"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-service/superutil"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
 
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 var (

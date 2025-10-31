@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/httputil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/httputil"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"

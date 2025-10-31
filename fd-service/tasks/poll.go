@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
 )
 
 // Poller runs a function on repeat at a set interval.

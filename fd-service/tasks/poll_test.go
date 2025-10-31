@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
 )
 
 const eventualTimeout = 10 * time.Second

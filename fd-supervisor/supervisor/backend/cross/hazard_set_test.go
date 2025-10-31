@@ -9,10 +9,10 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/stretchr/testify/require"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/testlog"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 func TestHazardSet_Build(t *testing.T) {

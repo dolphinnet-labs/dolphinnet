@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/batching"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/batching"
 )
 
 type DebugClient struct {

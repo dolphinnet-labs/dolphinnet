@@ -7,8 +7,8 @@ import (
 	"os"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-program/verify"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-program/verify"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 var opSepoliaChainID = eth.ChainIDFromUInt64(11155420)

@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
 )
 
 type contractArtifact struct {

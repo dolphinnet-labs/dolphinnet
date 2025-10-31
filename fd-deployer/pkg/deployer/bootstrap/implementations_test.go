@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils/devnet"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils/devnet"
 
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/opcm"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/testutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/testutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 	"github.com/stretchr/testify/require"
 )
 

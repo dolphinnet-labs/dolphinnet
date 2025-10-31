@@ -2,7 +2,7 @@ package constants
 
 import (
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/common/types"
+	"github.com/flexdeal-chain/fd-chain/common/types"
 )
 
 var (

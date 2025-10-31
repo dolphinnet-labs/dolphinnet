@@ -11,15 +11,15 @@ comment:
 ignore:
   - "op-e2e"
   - "**/*.t.sol"
-  - "packages/contracts-theweb3Chain/test/**/*.sol"
-  - "packages/contracts-theweb3Chain/scripts/**/*.sol"
-  - "packages/contracts-theweb3Chain/src/vendor/**/*.sol"
-  - "packages/contracts-theweb3Chain/src/interfaces/**/*.sol"
+  - "packages/contracts-fd-chain/test/**/*.sol"
+  - "packages/contracts-fd-chain/scripts/**/*.sol"
+  - "packages/contracts-fd-chain/src/vendor/**/*.sol"
+  - "packages/contracts-fd-chain/src/interfaces/**/*.sol"
   # TODO: add coverage for MIPS64 back once tests are merged in
-  - "packages/contracts-theweb3Chain/src/cannon/MIPS64.sol"
-  - "packages/contracts-theweb3Chain/src/cannon/libraries/MIPS64Instructions.sol"
-  - "packages/contracts-theweb3Chain/src/cannon/libraries/MIPS64State.sol"
-  - "packages/contracts-theweb3Chain/src/cannon/libraries/MIPS64Syscalls.sol"
+  - "packages/contracts-fd-chain/src/cannon/MIPS64.sol"
+  - "packages/contracts-fd-chain/src/cannon/libraries/MIPS64Instructions.sol"
+  - "packages/contracts-fd-chain/src/cannon/libraries/MIPS64State.sol"
+  - "packages/contracts-fd-chain/src/cannon/libraries/MIPS64Syscalls.sol"
 
 coverage:
   status:
@@ -39,4 +39,4 @@ flag_management:
   individual_flags:
     - name: contracts-theweb3Chain-tests
       paths:
-        - packages/contracts-theweb3Chain/src
+        - packages/contracts-fd-chain/src

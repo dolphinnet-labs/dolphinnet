@@ -8,13 +8,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/boot"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/claim"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/interop"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l1"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/tasks"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/boot"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/claim"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/interop"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l1"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/tasks"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 )
 
 var errInvalidConfig = errors.New("invalid config")

@@ -14,9 +14,9 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	oprpc "github.com/roothash-pay/roothash-chain/fd-service/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	oprpc "github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 )
 
 type mockRemoteSigner struct {

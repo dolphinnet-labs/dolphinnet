@@ -3,11 +3,11 @@ package derive
 import (
 	"testing"
 
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils/fuzzerutils"
 	fuzz "github.com/google/gofuzz"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils/fuzzerutils"
 	"github.com/stretchr/testify/require"
 )
 

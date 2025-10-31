@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive/params"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive/params"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils"
 )
 
 func FuzzFrameUnmarshalBinary(f *testing.F) {

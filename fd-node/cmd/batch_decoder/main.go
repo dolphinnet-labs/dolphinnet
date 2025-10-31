@@ -10,12 +10,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/roothash-pay/roothash-chain/fd-node/cmd/batch_decoder/fetch"
-	"github.com/roothash-pay/roothash-chain/fd-node/cmd/batch_decoder/reassemble"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive"
-	"github.com/roothash-pay/roothash-chain/rhs-service/client"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/cmd/batch_decoder/fetch"
+	"github.com/flexdeal-chain/fd-chain/fd-node/cmd/batch_decoder/reassemble"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 	"github.com/urfave/cli/v2"
 )
 

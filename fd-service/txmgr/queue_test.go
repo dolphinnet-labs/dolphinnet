@@ -13,8 +13,8 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/fd-service/testlog"
-	"github.com/roothash-pay/roothash-chain/fd-service/txmgr/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/txmgr/metrics"
 	"github.com/stretchr/testify/require"
 )
 

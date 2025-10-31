@@ -8,17 +8,17 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
-	"github.com/roothash-pay/roothash-chain/fd-service/cliapp"
-	oplog "github.com/roothash-pay/roothash-chain/fd-service/log"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/config"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/flags"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/config"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/flags"
 )
 
 type MainFn func(ctx context.Context, cfg *config.Config, logger log.Logger) (cliapp.Lifecycle, error)
 
 // Main is the entrypoint into the Supervisor.
-// This method returns a cliapp.LifecycleAction, to create an rhs-service CLI-lifecycle-managed supervisor with.
+// This method returns a cliapp.LifecycleAction, to create an fd-service CLI-lifecycle-managed supervisor with.
 func Main(version string, fn MainFn) cliapp.LifecycleAction {
 	return func(cliCtx *cli.Context, closeApp context.CancelCauseFunc) (cliapp.Lifecycle, error) {
 		if err := flags.CheckRequired(cliCtx); err != nil {

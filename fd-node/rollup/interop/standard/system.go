@@ -6,12 +6,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
-// StandardMode makes the rhs-node follow the canonical chain based on a read-only supervisor endpoint.
+// StandardMode makes the fd-node follow the canonical chain based on a read-only supervisor endpoint.
 type StandardMode struct {
 	log log.Logger
 

@@ -7,10 +7,10 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	opnode "github.com/roothash-pay/roothash-chain/fd-node"
-	"github.com/roothash-pay/roothash-chain/fd-node/flags"
-	opflags "github.com/roothash-pay/roothash-chain/rhs-service/flags"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	opnode "github.com/flexdeal-chain/fd-chain/fd-node"
+	"github.com/flexdeal-chain/fd-chain/fd-node/flags"
+	opflags "github.com/flexdeal-chain/fd-chain/fd-service/flags"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 )
 
 var Subcommands = []*cli.Command{

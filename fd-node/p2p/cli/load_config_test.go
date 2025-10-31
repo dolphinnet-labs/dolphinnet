@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p"
 	"github.com/stretchr/testify/require"
 )
 
@@ -62,7 +62,7 @@ func TestResolveURLIP(t *testing.T) {
 // TestDefaultBootnodes checks that the default bootnodes are valid enode specifiers.
 // The default boodnodes use to be specified with [enode.MustParse]. But then upstream geth
 // stopped resolving DNS host names in old enode specifiers. So this resolution got moved
-// into the rhs-node's initP2P function. Because it is only run at runtime, this test
+// into the fd-node's initP2P function. Because it is only run at runtime, this test
 // ensures that the specifiers are valid (without DNS resolution, which is fine).
 func TestDefaultBootnodes(t *testing.T) {
 	for _, record := range p2p.DefaultBootnodes {

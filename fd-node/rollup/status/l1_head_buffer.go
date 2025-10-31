@@ -3,7 +3,7 @@ package status
 import (
 	"sync"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // l1HeadBuffer is a thread-safe cache for L1 block references, which contains a series blocks with a valid chain of parent hashes.

@@ -7,8 +7,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
-	optls "github.com/roothash-pay/roothash-chain/fd-service/tls"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	optls "github.com/flexdeal-chain/fd-chain/fd-service/tls"
 )
 
 const (

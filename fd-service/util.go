@@ -14,7 +14,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/ctxinterrupt"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ctxinterrupt"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"

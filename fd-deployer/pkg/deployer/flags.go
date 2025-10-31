@@ -6,10 +6,10 @@ import (
 	"os"
 	"path"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 
-	op_service "github.com/roothash-pay/roothash-chain/rhs-service"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	op_service "github.com/flexdeal-chain/fd-chain/fd-service"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 	"github.com/urfave/cli/v2"
 )
 
@@ -56,11 +56,11 @@ func NewDeploymentTarget(s string) (DeploymentTarget, error) {
 func GetDefaultCacheDir() string {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
-		fallbackDir := ".rhs-deployer/cache"
+		fallbackDir := ".fd-deployer/cache"
 		log.Printf("error getting user home directory: %v, using fallback directory: %s\n", err, fallbackDir)
 		return fallbackDir
 	}
-	return path.Join(homeDir, ".rhs-deployer/cache")
+	return path.Join(homeDir, ".fd-deployer/cache")
 }
 
 var (
@@ -116,7 +116,7 @@ var (
 		Value:   string(DeploymentTargetLive),
 	}
 	OpProgramSvcUrlFlag = &cli.StringFlag{
-		Name:    "rhs-program-svc-url",
+		Name:    "fd-program-svc-url",
 		Usage:   "URL of the OP Program SVC",
 		EnvVars: PrefixEnvVar("OP_PROGRAM_SVC_URL"),
 	}

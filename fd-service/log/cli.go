@@ -12,8 +12,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
-	"github.com/roothash-pay/roothash-chain/fd-service/cliapp"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
 )
 
 const (

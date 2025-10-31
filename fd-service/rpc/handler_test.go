@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 )
 
 func TestHandler(t *testing.T) {

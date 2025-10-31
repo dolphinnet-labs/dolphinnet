@@ -4,13 +4,13 @@ import (
 	"os"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/config"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/flags"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/subcmds"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/version"
-	opservice "github.com/roothash-pay/roothash-chain/rhs-service"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/config"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/subcmds"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/version"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 	"github.com/urfave/cli/v2"
 )
 
@@ -42,7 +42,7 @@ func run(args []string, action ConfigAction) error {
 	app := cli.NewApp()
 	app.Version = VersionWithMeta
 	app.Flags = flags.Flags
-	app.Name = "rhs-program"
+	app.Name = "fd-program"
 	app.Usage = "Optimism Fault Proof Program"
 	app.Description = "The Optimism Fault Proof Program fault proof program that runs through the rollup state-transition to verify an core output from L1 inputs."
 	app.Commands = []*cli.Command{

@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/types"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/types"
 	"github.com/urfave/cli/v2"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
-	service "github.com/roothash-pay/roothash-chain/rhs-service"
-	openum "github.com/roothash-pay/roothash-chain/rhs-service/enum"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
+	service "github.com/flexdeal-chain/fd-chain/fd-service"
+	openum "github.com/flexdeal-chain/fd-chain/fd-service/enum"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 const EnvVarPrefix = "OP_PROGRAM"

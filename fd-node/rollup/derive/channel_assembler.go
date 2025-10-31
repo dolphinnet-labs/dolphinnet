@@ -6,7 +6,7 @@ import (
 	"io"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // ChannelAssembler assembles frames into a raw channel. It replaces the ChannelBank since Holocene.

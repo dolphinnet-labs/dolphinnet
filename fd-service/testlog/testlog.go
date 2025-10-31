@@ -32,7 +32,7 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/log"
-	oplog "github.com/roothash-pay/roothash-chain/fd-service/log"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 )
 
 var useColorInTestLog bool = true

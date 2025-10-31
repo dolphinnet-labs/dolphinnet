@@ -7,9 +7,9 @@ import (
 	"slices"
 	"sort"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/params"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-node/params"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 type StaticConfigDependency struct {

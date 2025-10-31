@@ -12,7 +12,7 @@ import (
 
 	rpc "github.com/ethereum/go-ethereum/rpc"
 
-	txmgr "github.com/roothash-pay/roothash-chain/fd-service/txmgr"
+	txmgr "github.com/flexdeal-chain/fd-chain/fd-service/txmgr"
 
 	types "github.com/ethereum/go-ethereum/core/types"
 )

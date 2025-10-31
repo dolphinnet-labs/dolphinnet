@@ -5,7 +5,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/metrics"
 )
 
 type Metrics interface {

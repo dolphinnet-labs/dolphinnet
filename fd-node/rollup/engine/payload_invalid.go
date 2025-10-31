@@ -1,6 +1,6 @@
 package engine
 
-import "github.com/roothash-pay/roothash-chain/rhs-service/eth"
+import "github.com/flexdeal-chain/fd-chain/fd-service/eth"
 
 type PayloadInvalidEvent struct {
 	Envelope *eth.ExecutionPayloadEnvelope

@@ -9,9 +9,9 @@ import (
 	gethTypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethdb"
-	interopTypes "github.com/roothash-pay/roothash-chain/rhs-program/client/interop/types"
-	l2Types "github.com/roothash-pay/roothash-chain/rhs-program/client/l2/types"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	interopTypes "github.com/flexdeal-chain/fd-chain/fd-program/client/interop/types"
+	l2Types "github.com/flexdeal-chain/fd-chain/fd-program/client/l2/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // Same as l2.StateOracle but need to use our own copy to avoid dependency loops

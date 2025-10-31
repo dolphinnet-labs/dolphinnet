@@ -6,14 +6,14 @@ import (
 
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/common/script/forking"
+	"github.com/flexdeal-chain/fd-chain/common/script/forking"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/broadcaster"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/broadcaster"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 )
 
 func DefaultScriptHost(

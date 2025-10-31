@@ -5,8 +5,8 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/opcm"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 )
 
 func DeployAdditionalDisputeGames(

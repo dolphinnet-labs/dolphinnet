@@ -7,10 +7,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/plan"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/plan"
 
-	suptypes "github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	suptypes "github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 var _ Result = (*InteropOutput)(nil)

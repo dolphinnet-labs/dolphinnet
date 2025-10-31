@@ -6,7 +6,7 @@ import (
 	"io"
 
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/batching/rpcblock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/batching/rpcblock"
 )
 
 var DefaultBatchSize = 100

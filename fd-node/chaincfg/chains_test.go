@@ -6,19 +6,19 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/stretchr/testify/require"
 )
 
 // TestGetRollupConfig tests that the configs sourced from the superchain-registry match
-// the configs that were embedded in the rhs-node manually before the superchain-registry was utilized.
+// the configs that were embedded in the fd-node manually before the superchain-registry was utilized.
 //
 // The superchain-registry repository is a work in progress.
 // At a later date, it will be proposed to, and must be approved by, Optimism Governance.
 // Until that time, the configuration described in the superchain-registry is subject to change.
 //
-// This test ensures no rhs-node config-loading behavior changes before
+// This test ensures no fd-node config-loading behavior changes before
 // the superchain-registry is no longer deemed experimental.
 func TestGetRollupConfig(t *testing.T) {
 	configsByName := map[string]rollup.Config{

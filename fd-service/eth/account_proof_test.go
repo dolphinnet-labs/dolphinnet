@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/bigs"
+	"github.com/flexdeal-chain/fd-chain/fd-service/bigs"
 )
 
 // Example account result taken from the Goerli SystemConfig proxy:

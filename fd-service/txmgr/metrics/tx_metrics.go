@@ -5,7 +5,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/metrics"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

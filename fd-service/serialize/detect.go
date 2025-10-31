@@ -4,8 +4,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/fd-service/jsonutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
 )
 
 func Write[X Serializable](outputPath string, x X, perm os.FileMode) error {

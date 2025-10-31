@@ -6,9 +6,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/common/script"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 	"github.com/stretchr/testify/require"
 )
 
@@ -20,7 +20,7 @@ func createTestHost(t *testing.T) *script.Host {
 	logger, _ := testlog.CaptureLogger(t, log.LevelInfo)
 
 	// Create an artifact filesystem pointing to the bedrock contracts artifact directory
-	af := foundry.OpenArtifactsDir("../../../../packages/contracts-theweb3Chain/forge-artifacts")
+	af := foundry.OpenArtifactsDir("../../../../packages/contracts-fd-chain/forge-artifacts")
 
 	// Now put a host together
 	host := script.NewHost(logger, af, nil, script.DefaultContext, script.WithCreate2Deployer())

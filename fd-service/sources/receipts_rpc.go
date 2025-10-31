@@ -10,10 +10,10 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-service/client"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/caching"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/caching"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 func newRPCRecProviderFromConfig(client client.RPC, log log.Logger, metrics caching.Metrics, config *EthClientConfig) *CachingReceiptsProvider {

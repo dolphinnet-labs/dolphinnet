@@ -12,10 +12,10 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
-	opcrypto "github.com/roothash-pay/roothash-chain/fd-service/crypto"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	opsigner "github.com/roothash-pay/roothash-chain/fd-service/signer"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	opcrypto "github.com/flexdeal-chain/fd-chain/fd-service/crypto"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	opsigner "github.com/flexdeal-chain/fd-chain/fd-service/signer"
 	"github.com/urfave/cli/v2"
 )
 

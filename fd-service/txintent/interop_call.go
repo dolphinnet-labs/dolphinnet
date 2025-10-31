@@ -6,11 +6,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/flexdeal-chain/fd-chain/common/contracts/constants"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/lmittmann/w3"
-	"github.com/roothash-pay/roothash-chain/common/contracts/constants"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
 
-	suptypes "github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	suptypes "github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 var _ Call = (*InitTrigger)(nil)

@@ -8,7 +8,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
 	"github.com/stretchr/testify/require"
 )
 

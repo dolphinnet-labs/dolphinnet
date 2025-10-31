@@ -7,9 +7,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/gating"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/gating"
 
 	decredSecp "github.com/decred/dcrd/dcrec/secp256k1/v4"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p-testing/netutil"
 	"github.com/libp2p/go-libp2p/core/connmgr"
@@ -18,7 +19,6 @@ import (
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
 
 	gcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/log"

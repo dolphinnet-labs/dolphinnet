@@ -7,8 +7,8 @@ import (
 	"path"
 	"testing"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/params"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/params"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/stretchr/testify/require"
 )
 

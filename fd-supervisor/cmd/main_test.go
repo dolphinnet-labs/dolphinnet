@@ -11,10 +11,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/cliapp"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/config"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/syncnode"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/config"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/syncnode"
 )
 
 var (
@@ -95,7 +95,7 @@ func configForArgs(t *testing.T, cliArgs []string) *config.Config {
 func dryRunWithArgs(cliArgs []string) (log.Logger, *config.Config, error) {
 	cfg := new(config.Config)
 	var logger log.Logger
-	fullArgs := append([]string{"rhs-supervisor"}, cliArgs...)
+	fullArgs := append([]string{"fd-supervisor"}, cliArgs...)
 	testErr := errors.New("dry-run")
 	err := run(context.Background(), fullArgs, func(ctx context.Context, config *config.Config, log log.Logger) (cliapp.Lifecycle, error) {
 		logger = log

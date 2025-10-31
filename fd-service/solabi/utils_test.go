@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/solabi"
+	"github.com/flexdeal-chain/fd-chain/fd-service/solabi"
 	"github.com/stretchr/testify/require"
 )
 

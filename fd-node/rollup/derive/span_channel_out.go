@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/rlp"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 )
 
 type SpanChannelOut struct {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/txmgr"
+	"github.com/flexdeal-chain/fd-chain/fd-service/txmgr"
 )
 
 var (
@@ -22,7 +22,7 @@ var (
 	minTip = big.NewInt(1 * 1e9)
 )
 
-// DeployerGasPriceEstimator is a custom gas price estimator for use with rhs-deployer.
+// DeployerGasPriceEstimator is a custom gas price estimator for use with fd-deployer.
 // It pads the base fee by 50% and multiplies the suggested tip by 5 up to a max of
 // 50 gwei.
 func DeployerGasPriceEstimator(ctx context.Context, client txmgr.ETHBackend) (*big.Int, *big.Int, *big.Int, error) {

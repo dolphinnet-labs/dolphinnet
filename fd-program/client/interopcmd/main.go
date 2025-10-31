@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/roothash-pay/roothash-chain/rhs-program/client"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client"
 )
 
 func main() {

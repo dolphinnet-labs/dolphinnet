@@ -1,4 +1,4 @@
-// Package metrics provides a set of metrics for the rhs-node.
+// Package metrics provides a set of metrics for the fd-node.
 package metrics
 
 import (
@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	ophttp "github.com/roothash-pay/roothash-chain/rhs-service/httputil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	ophttp "github.com/flexdeal-chain/fd-chain/fd-service/httputil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/metrics"
 
 	pb "github.com/libp2p/go-libp2p-pubsub/pb"
 	libp2pmetrics "github.com/libp2p/go-libp2p/core/metrics"
@@ -21,7 +21,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 const Namespace = "op_node"
@@ -73,7 +73,7 @@ type Metricer interface {
 	ReportProtocolVersions(local, engine, recommended, required params.ProtocolVersion)
 }
 
-// Metrics tracks all the metrics for the rhs-node.
+// Metrics tracks all the metrics for the fd-node.
 type Metrics struct {
 	Info *prometheus.GaugeVec
 	Up   prometheus.Gauge

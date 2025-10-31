@@ -3,8 +3,8 @@ package rollup
 import (
 	"errors"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/bindings"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/bindings"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 var ErrNilProof = errors.New("output root proof is nil")

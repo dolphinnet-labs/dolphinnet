@@ -5,13 +5,13 @@ import (
 	"github.com/urfave/cli/v2"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/engine"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/sync"
-	openum "github.com/roothash-pay/roothash-chain/rhs-service/enum"
-	opflags "github.com/roothash-pay/roothash-chain/rhs-service/flags"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
-	"github.com/roothash-pay/roothash-chain/rhs-service/oppprof"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/engine"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/sync"
+	openum "github.com/flexdeal-chain/fd-chain/fd-service/enum"
+	opflags "github.com/flexdeal-chain/fd-chain/fd-service/flags"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/oppprof"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 // Flags
@@ -108,7 +108,7 @@ var (
 		Name:     "rpc.port",
 		Usage:    "RPC listening port",
 		EnvVars:  prefixEnvVars("RPC_PORT"),
-		Value:    9545, // Note: rhs-service/rpc/cli.go uses 8545 as the default.
+		Value:    9545, // Note: fd-service/rpc/cli.go uses 8545 as the default.
 		Category: OperationsCategory,
 	}
 	RPCEnableAdmin = &cli.BoolFlag{
@@ -362,7 +362,7 @@ var (
 		Usage: "Interop RPC listening port, to serve supervisor syncing." +
 			"Applies only to Interop-enabled networks.",
 		EnvVars:  prefixEnvVars("INTEROP_RPC_PORT"),
-		Value:    9645, // Note: rhs-service/rpc/cli.go uses 8545 as the default.
+		Value:    9645, // Note: fd-service/rpc/cli.go uses 8545 as the default.
 		Category: InteropCategory,
 	}
 	InteropJWTSecret = &cli.StringFlag{

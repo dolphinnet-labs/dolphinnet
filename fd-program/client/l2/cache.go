@@ -3,10 +3,10 @@ package l2
 import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
+	interopTypes "github.com/flexdeal-chain/fd-chain/fd-program/client/interop/types"
+	l2Types "github.com/flexdeal-chain/fd-chain/fd-program/client/l2/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/hashicorp/golang-lru/v2/simplelru"
-	interopTypes "github.com/roothash-pay/roothash-chain/rhs-program/client/interop/types"
-	l2Types "github.com/roothash-pay/roothash-chain/rhs-program/client/l2/types"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
 )
 
 // blockCacheSize should be set large enough to handle the pipeline reset process of walking back from core head to find

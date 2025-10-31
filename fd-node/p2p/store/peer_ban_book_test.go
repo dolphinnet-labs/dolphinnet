@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 	ds "github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-datastore/sync"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
 	"github.com/stretchr/testify/require"
 )
 

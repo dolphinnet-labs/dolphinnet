@@ -1,6 +1,6 @@
 // Package sources exports a number of clients used to access ethereum chain data.
 //
-// There are a number of these exported clients used by the rhs-node:
+// There are a number of these exported clients used by the fd-node:
 // [L1Client] wraps an RPC client to retrieve L1 ethereum data.
 // [L2Client] wraps an RPC client to retrieve core ethereum data.
 // [RollupClient] wraps an RPC client to retrieve rollup data.
@@ -25,10 +25,10 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/apis"
-	"github.com/roothash-pay/roothash-chain/fd-service/client"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/caching"
+	"github.com/flexdeal-chain/fd-chain/fd-service/apis"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/caching"
 )
 
 type EthClientConfig struct {

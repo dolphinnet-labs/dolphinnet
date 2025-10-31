@@ -5,9 +5,9 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/flexdeal-chain/fd-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
 	"github.com/lmittmann/w3"
-	"github.com/roothash-pay/roothash-chain/common/script"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/opcm"
 )
 
 type InteropMigrationInput struct {

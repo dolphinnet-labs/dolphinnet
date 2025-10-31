@@ -3,8 +3,8 @@ package chainconfig
 import (
 	"testing"
 
-	"github.com/roothash-pay/roothash-chain/rhs-program/chainconfig/test"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-program/chainconfig/test"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/stretchr/testify/require"
 )
 

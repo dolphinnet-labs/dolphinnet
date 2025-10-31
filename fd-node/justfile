@@ -4,14 +4,14 @@ import '../justfiles/go.just'
 _LDFLAGSSTRING := "'" + trim(
     "-X main.GitCommit=" + GITCOMMIT + " " + \
     "-X main.GitDate=" + GITDATE + " " + \
-    "-X github.com/roothash-pay/roothash-chain/rhs-node/version.Version=" + VERSION + " " + \
-    "-X github.com/roothash-pay/roothash-chain/rhs-node/version.Meta=" + VERSION_META + " " + \
+    "-X github.com/flexdeal-chain/fd-chain/fd-node/version.Version=" + VERSION + " " + \
+    "-X github.com/flexdeal-chain/fd-chain/fd-node/version.Meta=" + VERSION_META + " " + \
     "") + "'"
 
-BINARY := "./bin/rhs-node"
+BINARY := "./bin/fd-node"
 
-# Build rhs-node binary
-rhs-node: (go_build BINARY "./cmd" "-ldflags" _LDFLAGSSTRING)
+# Build fd-node binary
+fd-node: (go_build BINARY "./cmd" "-ldflags" _LDFLAGSSTRING)
 
 # Clean build artifacts
 clean:

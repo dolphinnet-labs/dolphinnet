@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	opservice "github.com/roothash-pay/roothash-chain/rhs-service"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
 
 	"github.com/stretchr/testify/require"
 	"github.com/urfave/cli/v2"

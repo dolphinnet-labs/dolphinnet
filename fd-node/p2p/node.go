@@ -22,13 +22,13 @@ import (
 	"github.com/ethereum/go-ethereum/p2p/discover"
 	"github.com/ethereum/go-ethereum/p2p/enode"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/gating"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/monitor"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/gating"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/monitor"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // NodeP2P is a p2p node, which can be used to gossip messages.

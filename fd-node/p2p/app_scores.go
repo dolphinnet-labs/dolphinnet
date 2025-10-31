@@ -5,9 +5,9 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
 )
 
 type ScoreBook interface {

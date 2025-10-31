@@ -9,11 +9,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/artifacts"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testlog"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils/devnet"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/artifacts"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils/devnet"
 	"github.com/stretchr/testify/require"
 )
 

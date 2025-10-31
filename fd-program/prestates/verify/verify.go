@@ -7,7 +7,7 @@ import (
 	"os"
 	"slices"
 
-	"github.com/roothash-pay/roothash-chain/rhs-program/prestates"
+	"github.com/flexdeal-chain/fd-chain/fd-program/prestates"
 )
 
 func main() {

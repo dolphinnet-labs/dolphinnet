@@ -3,7 +3,7 @@ package opcm
 import (
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 )
 
 type PreinstallsScript struct {

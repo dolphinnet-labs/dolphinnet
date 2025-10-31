@@ -2,9 +2,9 @@ package bootstrap
 
 import (
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
-	"github.com/roothash-pay/roothash-chain/rhs-service/cliapp"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
 	"github.com/urfave/cli/v2"
 )
 

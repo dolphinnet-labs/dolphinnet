@@ -9,7 +9,7 @@ import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/urfave/cli/v2"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/metrics"
 )
 
 type Metrics interface {

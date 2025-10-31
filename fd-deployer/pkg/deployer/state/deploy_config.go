@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
 
-	op_service "github.com/roothash-pay/roothash-chain/rhs-service"
+	op_service "github.com/flexdeal-chain/fd-chain/fd-service"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
 
 	"github.com/ethereum/go-ethereum/rpc"
 
@@ -18,7 +18,7 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/roothash-pay/roothash-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
 )
 
 var (

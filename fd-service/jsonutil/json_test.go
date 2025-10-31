@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
 	"github.com/stretchr/testify/require"
 )
 

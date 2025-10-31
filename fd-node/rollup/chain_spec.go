@@ -5,8 +5,8 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/roothash-pay/roothash-chain/fd-node/params"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/params"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // maxChannelBankSize is the amount of memory space, in number of bytes,

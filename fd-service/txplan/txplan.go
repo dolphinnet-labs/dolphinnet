@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
 	"github.com/holiman/uint256"
-	"github.com/roothash-pay/roothash-chain/fd-service/retry"
 
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
@@ -17,8 +17,8 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	"github.com/roothash-pay/roothash-chain/fd-service/plan"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/plan"
 )
 
 type PlannedTx struct {

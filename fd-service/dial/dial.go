@@ -7,9 +7,9 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-service/client"
-	"github.com/roothash-pay/roothash-chain/fd-service/retry"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 // DefaultDialTimeout is a default timeout for dialing a client.

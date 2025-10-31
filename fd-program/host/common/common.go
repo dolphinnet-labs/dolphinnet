@@ -11,10 +11,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/log"
-	cl "github.com/roothash-pay/roothash-chain/rhs-program/client"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/config"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/kvstore"
+	cl "github.com/flexdeal-chain/fd-chain/fd-program/client"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/config"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/kvstore"
 )
 
 type Prefetcher interface {

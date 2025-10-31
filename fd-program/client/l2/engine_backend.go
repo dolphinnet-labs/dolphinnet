@@ -17,9 +17,9 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/triedb"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2/engineapi"
-	l2Types "github.com/roothash-pay/roothash-chain/rhs-program/client/l2/types"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2/engineapi"
+	l2Types "github.com/flexdeal-chain/fd-chain/fd-program/client/l2/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 var (

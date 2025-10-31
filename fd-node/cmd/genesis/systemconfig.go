@@ -6,8 +6,8 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources/batching"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources/batching/rpcblock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/batching"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/batching/rpcblock"
 )
 
 var (

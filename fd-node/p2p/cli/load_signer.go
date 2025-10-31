@@ -9,9 +9,9 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/urfave/cli/v2"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/flags"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p"
-	opsigner "github.com/roothash-pay/roothash-chain/rhs-service/signer"
+	"github.com/flexdeal-chain/fd-chain/fd-node/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p"
+	opsigner "github.com/flexdeal-chain/fd-chain/fd-service/signer"
 )
 
 // LoadSignerSetup loads a configuration for a Signer to be set up later

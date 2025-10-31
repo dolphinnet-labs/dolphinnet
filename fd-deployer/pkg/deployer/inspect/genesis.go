@@ -5,13 +5,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
-	"github.com/roothash-pay/roothash-chain/common/genesis"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/pipeline"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
-	"github.com/roothash-pay/roothash-chain/rhs-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/pipeline"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
 	"github.com/urfave/cli/v2"
 )
 
@@ -40,7 +40,7 @@ func GenesisCLI(cliCtx *cli.Context) error {
 
 func GenesisAndRollup(globalState *state.State, chainID common.Hash) (*core.Genesis, *rollup.Config, error) {
 	if globalState.AppliedIntent == nil {
-		return nil, nil, fmt.Errorf("chain state is not applied - run rhs-deployer apply")
+		return nil, nil, fmt.Errorf("chain state is not applied - run fd-deployer apply")
 	}
 
 	chainIntent, err := globalState.AppliedIntent.Chain(chainID)

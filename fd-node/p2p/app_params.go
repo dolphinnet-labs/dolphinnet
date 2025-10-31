@@ -3,7 +3,7 @@ package p2p
 import (
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 )
 
 type ApplicationScoreParams struct {

@@ -6,9 +6,9 @@ import (
 	"slices"
 
 	"github.com/ethereum/go-ethereum/superchain"
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
-	"github.com/roothash-pay/roothash-chain/rhs-program/chainconfig"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
+	"github.com/flexdeal-chain/fd-chain/fd-program/chainconfig"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/urfave/cli/v2"
 )
 

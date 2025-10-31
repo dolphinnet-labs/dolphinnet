@@ -6,8 +6,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 	"github.com/holiman/uint256"
-	"github.com/roothash-pay/roothash-chain/common/script"
 	"github.com/stretchr/testify/require"
 )
 

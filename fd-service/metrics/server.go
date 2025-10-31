@@ -4,9 +4,9 @@ import (
 	"net"
 	"strconv"
 
+	"github.com/flexdeal-chain/fd-chain/fd-service/httputil"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/roothash-pay/roothash-chain/fd-service/httputil"
 )
 
 func StartServer(r *prometheus.Registry, hostname string, port int) (*httputil.HTTPServer, error) {

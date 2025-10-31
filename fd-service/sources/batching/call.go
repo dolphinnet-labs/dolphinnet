@@ -6,7 +6,7 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/batching/rpcblock"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/batching/rpcblock"
 )
 
 type BatchElementCreator func(block rpcblock.Block) (any, rpc.BatchElem)

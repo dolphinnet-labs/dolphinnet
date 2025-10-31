@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/plan"
+	"github.com/flexdeal-chain/fd-chain/fd-service/plan"
 )
 
 func TestNode(t *testing.T) {

@@ -8,10 +8,10 @@ _LDFLAGSSTRING := "'" + trim(
     "-X main.Meta=" + VERSION_META + " " + \
     "") + "'"
 
-BINARY := "./bin/rhs-supervisor"
+BINARY := "./bin/fd-supervisor"
 
-# Build rhs-supervisor binary
-rhs-supervisor: (go_build BINARY "./cmd" "-ldflags" _LDFLAGSSTRING)
+# Build fd-supervisor binary
+fd-supervisor: (go_build BINARY "./cmd" "-ldflags" _LDFLAGSSTRING)
 
 # Clean build artifacts
 clean:

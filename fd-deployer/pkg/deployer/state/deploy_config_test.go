@@ -3,8 +3,8 @@ package state
 import (
 	"testing"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/artifacts"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/artifacts"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

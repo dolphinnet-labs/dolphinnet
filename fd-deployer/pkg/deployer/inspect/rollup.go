@@ -3,10 +3,10 @@ package inspect
 import (
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/pipeline"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/pipeline"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
 	"github.com/urfave/cli/v2"
 )
 

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/locks"
+	"github.com/flexdeal-chain/fd-chain/fd-service/locks"
 )
 
 var ErrNotReady = errors.New("not ready for reads (forgot to register a dependency or eval func/val?)")

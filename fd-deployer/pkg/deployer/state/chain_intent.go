@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/roothash-pay/roothash-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
 )
 
 type VMType string

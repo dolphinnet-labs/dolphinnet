@@ -9,7 +9,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/httputil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/httputil"
 )
 
 // Server is a convenience util, that wraps an httputil.HTTPServer and provides an RPC Handler

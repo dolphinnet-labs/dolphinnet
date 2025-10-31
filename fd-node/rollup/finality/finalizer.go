@@ -5,11 +5,11 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"sync"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/engine"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/engine"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // defaultFinalityLookback defines the amount of L1<>core relations to track for finalization purposes, one per L1 block.
@@ -194,7 +194,7 @@ func (fi *Finalizer) onDerivedSafeBlock(l2Safe eth.L2BlockRef) {
 
 	// Stop registering blocks after interop.
 	// Finality in interop is determined by the superchain backend,
-	// i.e. the rhs-supervisor RPC identifies which core block may be finalized.
+	// i.e. the fd-supervisor RPC identifies which core block may be finalized.
 	if fi.cfg.IsInterop(l2Safe.Time) {
 		return
 	}

@@ -25,12 +25,12 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	p2p "github.com/roothash-pay/roothash-chain/fd-node/p2p"
-	p2pMocks "github.com/roothash-pay/roothash-chain/fd-node/p2p/mocks"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
-	testlog "github.com/roothash-pay/roothash-chain/rhs-service/testlog"
+	p2p "github.com/flexdeal-chain/fd-chain/fd-node/p2p"
+	p2pMocks "github.com/flexdeal-chain/fd-chain/fd-node/p2p/mocks"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
+	testlog "github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 )
 
 // PeerScoresTestSuite tests peer parameterization.

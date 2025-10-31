@@ -4,19 +4,19 @@ import (
 	"context"
 	"os"
 
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/config"
 	"github.com/urfave/cli/v2"
 
 	"github.com/ethereum/go-ethereum/log"
 
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
-	"github.com/roothash-pay/roothash-chain/fd-service/cliapp"
-	"github.com/roothash-pay/roothash-chain/fd-service/ctxinterrupt"
-	oplog "github.com/roothash-pay/roothash-chain/fd-service/log"
-	"github.com/roothash-pay/roothash-chain/fd-service/metrics/doc"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/flags"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/metrics"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ctxinterrupt"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/metrics/doc"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/config"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor"
 )
 
 var (
@@ -39,9 +39,9 @@ func run(ctx context.Context, args []string, fn supervisor.MainFn) error {
 	app := cli.NewApp()
 	app.Flags = cliapp.ProtectFlags(flags.Flags)
 	app.Version = opservice.FormatVersion(Version, GitCommit, GitDate, "")
-	app.Name = "rhs-supervisor"
-	app.Usage = "rhs-supervisor monitors cross-core interop messaging"
-	app.Description = "The rhs-supervisor monitors cross-core interop messaging by pre-fetching events and then resolving the cross-core dependencies to answer safety queries."
+	app.Name = "fd-supervisor"
+	app.Usage = "fd-supervisor monitors cross-core interop messaging"
+	app.Description = "The fd-supervisor monitors cross-core interop messaging by pre-fetching events and then resolving the cross-core dependencies to answer safety queries."
 	app.Action = cliapp.LifecycleCmd(supervisor.Main(app.Version, fn))
 	app.Commands = []*cli.Command{
 		{

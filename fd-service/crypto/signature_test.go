@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/signer"
-	"github.com/roothash-pay/roothash-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-service/signer"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"

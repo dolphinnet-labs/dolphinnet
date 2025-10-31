@@ -1,8 +1,8 @@
 package rollup
 
 import (
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // L1TemporaryErrorEvent identifies a temporary issue with the L1 data.

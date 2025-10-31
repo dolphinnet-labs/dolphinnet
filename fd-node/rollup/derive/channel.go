@@ -9,7 +9,7 @@ import (
 
 	"github.com/andybalholm/brotli"
 	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 const (

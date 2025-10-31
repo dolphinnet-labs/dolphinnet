@@ -12,14 +12,14 @@ import (
 	cli "github.com/urfave/cli/v2"
 
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/roothash-pay/roothash-chain/common/devkeys"
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/common/interopgen"
-	op_service "github.com/roothash-pay/roothash-chain/rhs-service"
-	"github.com/roothash-pay/roothash-chain/rhs-service/cliapp"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	"github.com/flexdeal-chain/fd-chain/common/devkeys"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/interopgen"
+	op_service "github.com/flexdeal-chain/fd-chain/fd-service"
+	"github.com/flexdeal-chain/fd-chain/fd-service/cliapp"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 )
 
 var EnvPrefix = "OP_INTEROP"
@@ -43,12 +43,12 @@ var (
 	}
 	artifactsDirFlag = &cli.StringFlag{
 		Name:    "artifacts-dir",
-		Value:   "packages/contracts-theweb3Chain/forge-artifacts",
+		Value:   "packages/contracts-fd-chain/forge-artifacts",
 		EnvVars: op_service.PrefixEnvVar(EnvPrefix, "ARTIFACTS_DIR"),
 	}
 	foundryDirFlag = &cli.StringFlag{
 		Name:    "foundry-dir",
-		Value:   "packages/contracts-theweb3Chain",
+		Value:   "packages/contracts-fd-chain",
 		EnvVars: op_service.PrefixEnvVar(EnvPrefix, "FOUNDRY_DIR"),
 		Usage:   "Optional, for source-map info during genesis generation",
 	}

@@ -1,7 +1,7 @@
 package testutils
 
 import (
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
 	"github.com/stretchr/testify/mock"
 )
 

@@ -86,7 +86,7 @@ variable "OP_DRIPPER_VERSION" {
 }
 
 
-target "rhs-node" {
+target "fd-node" {
   dockerfile = "ops/docker/op-stack-go/Dockerfile"
   context = "."
   args = {
@@ -94,9 +94,9 @@ target "rhs-node" {
     GIT_DATE = "${GIT_DATE}"
     OP_NODE_VERSION = "${OP_NODE_VERSION}"
   }
-  target = "rhs-node-target"
+  target = "fd-node-target"
   platforms = split(",", PLATFORMS)
-  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/rhs-node:${tag}"]
+  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/fd-node:${tag}"]
 }
 
 target "op-batcher" {
@@ -178,7 +178,7 @@ target "da-server" {
   tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/da-server:${tag}"]
 }
 
-target "rhs-program" {
+target "fd-program" {
   dockerfile = "ops/docker/op-stack-go/Dockerfile"
   context = "."
   args = {
@@ -186,12 +186,12 @@ target "rhs-program" {
     GIT_DATE = "${GIT_DATE}"
     OP_PROGRAM_VERSION = "${OP_PROGRAM_VERSION}"
   }
-  target = "rhs-program-target"
+  target = "fd-program-target"
   platforms = split(",", PLATFORMS)
-  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/rhs-program:${tag}"]
+  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/fd-program:${tag}"]
 }
 
-target "rhs-supervisor" {
+target "fd-supervisor" {
   dockerfile = "ops/docker/op-stack-go/Dockerfile"
   context = "."
   args = {
@@ -199,9 +199,9 @@ target "rhs-supervisor" {
     GIT_DATE = "${GIT_DATE}"
     OP_SUPERVISOR_VERSION = "${OP_SUPERVISOR_VERSION}"
   }
-  target = "rhs-supervisor-target"
+  target = "fd-supervisor-target"
   platforms = split(",", PLATFORMS)
-  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/rhs-supervisor:${tag}"]
+  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/fd-supervisor:${tag}"]
 }
 
 target "cannon" {
@@ -228,7 +228,7 @@ target "holocene-deployer" {
   tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/holocene-deployer:${tag}"]
 }
 
-target "rhs-deployer" {
+target "fd-deployer" {
   dockerfile = "ops/docker/op-stack-go/Dockerfile"
   context = "."
   args = {
@@ -236,9 +236,9 @@ target "rhs-deployer" {
     GIT_DATE = "${GIT_DATE}"
     OP_DEPLOYER_VERSION = "${OP_DEPLOYER_VERSION}"
   }
-  target = "rhs-deployer-target"
+  target = "fd-deployer-target"
   platforms = split(",", PLATFORMS)
-  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/rhs-deployer:${tag}"]
+  tags = [for tag in split(",", IMAGE_TAGS) : "${REGISTRY}/${REPOSITORY}/fd-deployer:${tag}"]
 }
 
 target "op-dripper" {

@@ -7,23 +7,23 @@ import (
 	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/artifacts"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/artifacts"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/env"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/env"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/broadcaster"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/broadcaster"
 
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/opcm"
-	opcrypto "github.com/roothash-pay/roothash-chain/rhs-service/crypto"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ctxinterrupt"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ioutil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/jsonutil"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
+	opcrypto "github.com/flexdeal-chain/fd-chain/fd-service/crypto"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ctxinterrupt"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/jsonutil"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 	"github.com/urfave/cli/v2"
 )
 

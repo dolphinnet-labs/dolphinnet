@@ -8,10 +8,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/artifacts"
-	op_service "github.com/roothash-pay/roothash-chain/rhs-service"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/artifacts"
+	op_service "github.com/flexdeal-chain/fd-chain/fd-service"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils"
 	"github.com/stretchr/testify/require"
 )
 

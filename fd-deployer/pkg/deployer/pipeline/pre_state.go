@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/common/proofs/prestate"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/common/proofs/prestate"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 )
 
 type PreStateBuilder interface {

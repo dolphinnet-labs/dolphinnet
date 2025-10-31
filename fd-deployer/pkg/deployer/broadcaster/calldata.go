@@ -6,8 +6,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/roothash-pay/roothash-chain/common/script"
-	"github.com/roothash-pay/roothash-chain/rhs-service/txmgr"
+	"github.com/flexdeal-chain/fd-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/fd-service/txmgr"
 )
 
 const defaultGasLimit = 30_000_000

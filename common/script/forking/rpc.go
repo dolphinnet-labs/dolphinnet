@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/roothash-pay/roothash-chain/rhs-service/retry"
+	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
 )
 
 type RPCClient interface {

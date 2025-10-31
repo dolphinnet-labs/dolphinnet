@@ -7,9 +7,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 
-	op_service "github.com/roothash-pay/roothash-chain/rhs-service"
+	op_service "github.com/flexdeal-chain/fd-chain/fd-service"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/urfave/cli/v2"
@@ -69,7 +69,7 @@ func InitCLI() func(ctx *cli.Context) error {
 			return err
 		}
 
-		fmt.Printf("Successfully initialized rhs-deployer intent in directory: %s\n", outdir)
+		fmt.Printf("Successfully initialized fd-deployer intent in directory: %s\n", outdir)
 		return nil
 	}
 }

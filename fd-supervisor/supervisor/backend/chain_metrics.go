@@ -1,11 +1,11 @@
 package backend
 
 import (
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
-	opmetrics "github.com/roothash-pay/roothash-chain/fd-service/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/caching"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/db/logs"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/caching"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/db/logs"
 )
 
 type Metrics interface {

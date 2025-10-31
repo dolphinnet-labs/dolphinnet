@@ -3,14 +3,14 @@ package pipeline
 import (
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/standard"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/standard"
 
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/env"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/env"
 
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/broadcaster"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/opcm"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/broadcaster"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 
 	"github.com/ethereum/go-ethereum/common"
 )

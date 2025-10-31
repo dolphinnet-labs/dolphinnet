@@ -5,21 +5,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/stretchr/testify/require"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/dial"
-	oplog "github.com/roothash-pay/roothash-chain/fd-service/log"
-	opmetrics "github.com/roothash-pay/roothash-chain/fd-service/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-service/oppprof"
-	oprpc "github.com/roothash-pay/roothash-chain/fd-service/rpc"
-	"github.com/roothash-pay/roothash-chain/fd-service/testlog"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/config"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/dial"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/oppprof"
+	oprpc "github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/config"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/types"
 )
 
 func TestSupervisorService(t *testing.T) {

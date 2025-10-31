@@ -9,9 +9,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/superchain"
 
-	"github.com/roothash-pay/roothash-chain/common/genesis"
-	"github.com/roothash-pay/roothash-chain/rhs-node/rollup"
-	op_service "github.com/roothash-pay/roothash-chain/rhs-service"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	op_service "github.com/flexdeal-chain/fd-chain/fd-service"
 
 	"github.com/ethereum/go-ethereum/common"
 )

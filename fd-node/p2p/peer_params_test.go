@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
 	"github.com/stretchr/testify/suite"
 )
 

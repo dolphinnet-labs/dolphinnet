@@ -2,7 +2,7 @@ package p2p
 
 import (
 	"context"
-	opsigner "github.com/roothash-pay/roothash-chain/rhs-service/signer"
+	opsigner "github.com/flexdeal-chain/fd-chain/fd-service/signer"
 )
 
 type Signer interface {

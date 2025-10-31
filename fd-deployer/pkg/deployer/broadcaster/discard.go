@@ -3,7 +3,7 @@ package broadcaster
 import (
 	"context"
 
-	"github.com/roothash-pay/roothash-chain/common/script"
+	"github.com/flexdeal-chain/fd-chain/common/script"
 )
 
 type discardBroadcaster struct {

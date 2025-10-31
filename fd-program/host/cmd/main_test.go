@@ -11,16 +11,16 @@ import (
 
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-program/chainconfig"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/boot"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/config"
-	"github.com/roothash-pay/roothash-chain/rhs-program/host/types"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
-	"github.com/roothash-pay/roothash-chain/rhs-supervisor/supervisor/backend/depset"
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-program/chainconfig"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/boot"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/config"
+	"github.com/flexdeal-chain/fd-chain/fd-program/host/types"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-supervisor/supervisor/backend/depset"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
@@ -496,7 +496,7 @@ func configForArgs(t *testing.T, cliArgs []string) *config.Config {
 func runWithArgs(cliArgs []string) (log.Logger, *config.Config, error) {
 	cfg := new(config.Config)
 	var logger log.Logger
-	fullArgs := append([]string{"rhs-program"}, cliArgs...)
+	fullArgs := append([]string{"fd-program"}, cliArgs...)
 	err := run(fullArgs, func(log log.Logger, config *config.Config) error {
 		logger = log
 		cfg = config

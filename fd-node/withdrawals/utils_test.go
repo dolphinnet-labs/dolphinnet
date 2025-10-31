@@ -10,8 +10,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/roothash-pay/roothash-chain/fd-node/bindings"
-	"github.com/roothash-pay/roothash-chain/rhs-service/testutils"
+	"github.com/flexdeal-chain/fd-chain/fd-node/bindings"
+	"github.com/flexdeal-chain/fd-chain/fd-service/testutils"
 	"github.com/stretchr/testify/require"
 )
 

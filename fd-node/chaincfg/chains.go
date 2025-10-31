@@ -7,7 +7,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/superchain"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 )
 
 // OPSepolia loads the op-sepolia rollup config. This is intended for tests that need an arbitrary, valid rollup config.

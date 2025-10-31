@@ -7,9 +7,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/client"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources"
-	"github.com/roothash-pay/roothash-chain/fd-service/sources/caching"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources/caching"
 )
 
 // NewEthClient creates an Eth RPC client for event-log fetching.

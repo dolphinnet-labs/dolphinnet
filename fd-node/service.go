@@ -10,18 +10,18 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/urfave/cli/v2"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/chaincfg"
-	"github.com/roothash-pay/roothash-chain/fd-node/flags"
-	"github.com/roothash-pay/roothash-chain/fd-node/node"
-	p2pcli "github.com/roothash-pay/roothash-chain/fd-node/p2p/cli"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/driver"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/engine"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/interop"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/sync"
-	opflags "github.com/roothash-pay/roothash-chain/rhs-service/flags"
-	"github.com/roothash-pay/roothash-chain/rhs-service/oppprof"
-	"github.com/roothash-pay/roothash-chain/rhs-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-node/chaincfg"
+	"github.com/flexdeal-chain/fd-chain/fd-node/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-node/node"
+	p2pcli "github.com/flexdeal-chain/fd-chain/fd-node/p2p/cli"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/driver"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/engine"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/interop"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/sync"
+	opflags "github.com/flexdeal-chain/fd-chain/fd-service/flags"
+	"github.com/flexdeal-chain/fd-chain/fd-service/oppprof"
+	"github.com/flexdeal-chain/fd-chain/fd-service/rpc"
 )
 
 // NewConfig creates a Config from the provided flags or environment variables.
@@ -197,7 +197,7 @@ func NewRollupConfig(log log.Logger, network string, rollupConfigPath string) (*
 		if rollupConfigPath != "" {
 			log.Error(`Cannot configure network and rollup-config at the same time.
 Startup will proceed to use the network-parameter and ignore the rollup config.
-Conflicting configuration is deprecated, and will stop the rhs-node from starting in the future.
+Conflicting configuration is deprecated, and will stop the fd-node from starting in the future.
 `, "network", network, "rollup_config", rollupConfigPath)
 		}
 		rollupConfig, err := chaincfg.GetRollupConfig(network)

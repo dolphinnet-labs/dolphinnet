@@ -6,9 +6,9 @@ import (
 	"math"
 	"strings"
 
-	opservice "github.com/roothash-pay/roothash-chain/fd-service"
-	openum "github.com/roothash-pay/roothash-chain/fd-service/enum"
-	"github.com/roothash-pay/roothash-chain/fd-service/flags"
+	opservice "github.com/flexdeal-chain/fd-chain/fd-service"
+	openum "github.com/flexdeal-chain/fd-chain/fd-service/enum"
+	"github.com/flexdeal-chain/fd-chain/fd-service/flags"
 	"github.com/urfave/cli/v2"
 )
 

@@ -12,11 +12,11 @@ import (
 	gn "github.com/ethereum/go-ethereum/node"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/rhs-service/apis"
-	"github.com/roothash-pay/roothash-chain/rhs-service/client"
-	opmetrics "github.com/roothash-pay/roothash-chain/rhs-service/metrics"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-service/apis"
+	"github.com/flexdeal-chain/fd-chain/fd-service/client"
+	opmetrics "github.com/flexdeal-chain/fd-chain/fd-service/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 type L2EndpointSetup interface {

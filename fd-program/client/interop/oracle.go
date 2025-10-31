@@ -7,11 +7,11 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/rlp"
-	interopTypes "github.com/roothash-pay/roothash-chain/rhs-program/client/interop/types"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2"
-	l2Types "github.com/roothash-pay/roothash-chain/rhs-program/client/l2/types"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/mpt"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	interopTypes "github.com/flexdeal-chain/fd-chain/fd-program/client/interop/types"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2"
+	l2Types "github.com/flexdeal-chain/fd-chain/fd-program/client/l2/types"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/mpt"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // ConsolidateOracle extends another l2.Oracle with consolidated state data.

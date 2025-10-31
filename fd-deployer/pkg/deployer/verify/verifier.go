@@ -12,11 +12,11 @@ import (
 	"github.com/urfave/cli/v2"
 	"golang.org/x/time/rate"
 
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/artifacts"
-	"github.com/roothash-pay/roothash-chain/rhs-service/ctxinterrupt"
-	oplog "github.com/roothash-pay/roothash-chain/rhs-service/log"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/artifacts"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ctxinterrupt"
+	oplog "github.com/flexdeal-chain/fd-chain/fd-service/log"
 )
 
 type Verifier struct {

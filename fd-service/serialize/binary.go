@@ -6,7 +6,7 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/roothash-pay/roothash-chain/fd-service/ioutil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/ioutil"
 )
 
 // Deserializable defines functionality for a type that may be deserialized from raw bytes.

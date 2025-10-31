@@ -1,4 +1,4 @@
-module github.com/roothash-pay/roothash-chain
+module github.com/flexdeal-chain/fd-chain
 
 go 1.22.0
 

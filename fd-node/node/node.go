@@ -16,21 +16,21 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/metrics"
-	"github.com/roothash-pay/roothash-chain/fd-node/node/safedb"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/driver"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/event"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/interop"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/interop/managed"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/sequencing"
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/sync"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
-	"github.com/roothash-pay/roothash-chain/rhs-service/httputil"
-	"github.com/roothash-pay/roothash-chain/rhs-service/oppprof"
-	oprpc "github.com/roothash-pay/roothash-chain/rhs-service/rpc"
-	"github.com/roothash-pay/roothash-chain/rhs-service/sources"
+	"github.com/flexdeal-chain/fd-chain/fd-node/metrics"
+	"github.com/flexdeal-chain/fd-chain/fd-node/node/safedb"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/driver"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/event"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/interop"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/interop/managed"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/sequencing"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/sync"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-service/httputil"
+	"github.com/flexdeal-chain/fd-chain/fd-service/oppprof"
+	oprpc "github.com/flexdeal-chain/fd-chain/fd-service/rpc"
+	"github.com/flexdeal-chain/fd-chain/fd-service/sources"
 )
 
 var ErrAlreadyClosed = errors.New("node is already closed")
@@ -238,7 +238,7 @@ func (n *OpNode) initL2(ctx context.Context, cfg *Config) error {
 	}
 
 	if cfg.Rollup.ChainOpConfig == nil {
-		return fmt.Errorf("cfg.Rollup.ChainOpConfig is nil. Please see https://github.com/roothash-pay/roothash-chain/releases/tag/rhs-node/v1.11.0: %w", err)
+		return fmt.Errorf("cfg.Rollup.ChainOpConfig is nil. Please see https://github.com/flexdeal-chain/fd-chain/releases/tag/fd-node/v1.11.0: %w", err)
 	}
 
 	n.l2Driver = driver.NewDriver(n.eventSys, n.eventDrain, &cfg.Driver, &cfg.Rollup, n.l2Source, n.elClient, n, n, n.log, n.metrics, cfg.ConfigPersistence, n.safeDB, &cfg.Sync, managedMode, cfg.Driver.MaxRequestsPerBatch)
@@ -637,7 +637,7 @@ func (n *OpNode) InteropRPC() (rpcEndpoint string, jwtSecret eth.Bytes32) {
 func (n *OpNode) InteropRPCPort() (int, error) {
 	m, ok := n.interopSys.(*managed.ManagedMode)
 	if !ok {
-		return 0, fmt.Errorf("failed to fetch interop port for rhs-node")
+		return 0, fmt.Errorf("failed to fetch interop port for fd-node")
 	}
 	return m.WSPort()
 }

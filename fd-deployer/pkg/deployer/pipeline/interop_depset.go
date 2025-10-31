@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/roothash-pay/roothash-chain/common/proofs/prestate"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/common/proofs/prestate"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
 )
 
 func GenerateInteropDepset(ctx context.Context, pEnv *Env, globalIntent *state.Intent, st *state.State) error {

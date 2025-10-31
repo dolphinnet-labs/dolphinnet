@@ -30,9 +30,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/gating"
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/gating"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
 )
 
 const (

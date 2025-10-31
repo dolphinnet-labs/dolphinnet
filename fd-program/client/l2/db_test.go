@@ -17,9 +17,9 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/triedb"
 	"github.com/ethereum/go-ethereum/triedb/hashdb"
+	"github.com/flexdeal-chain/fd-chain/fd-program/client/l2/test"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 	"github.com/holiman/uint256"
-	"github.com/roothash-pay/roothash-chain/rhs-program/client/l2/test"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
 	"github.com/stretchr/testify/require"
 )
 

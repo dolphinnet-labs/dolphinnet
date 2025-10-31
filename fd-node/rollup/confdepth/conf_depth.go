@@ -5,8 +5,8 @@ import (
 
 	"github.com/ethereum/go-ethereum"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup/derive"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup/derive"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 // confDepth is an util that wraps the L1 input fetcher used in the pipeline,

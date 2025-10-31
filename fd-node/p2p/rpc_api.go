@@ -9,7 +9,7 @@ import (
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/store"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/store"
 )
 
 type PeerInfo struct {

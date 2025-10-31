@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/p2p/gating"
+	"github.com/flexdeal-chain/fd-chain/fd-node/p2p/gating"
 
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/p2p/discover"
@@ -22,7 +22,7 @@ import (
 	"github.com/libp2p/go-libp2p/core/metrics"
 	cmgr "github.com/libp2p/go-libp2p/p2p/net/connmgr"
 
-	"github.com/roothash-pay/roothash-chain/fd-node/rollup"
+	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
 )
 
 var DefaultBootnodes = []string{

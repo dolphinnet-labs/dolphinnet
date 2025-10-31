@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/flexdeal-chain/fd-chain/fd-service/clock"
 	lru "github.com/hashicorp/golang-lru/v2"
 	ds "github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-datastore/query"
-	"github.com/roothash-pay/roothash-chain/rhs-service/clock"
 )
 
 const (

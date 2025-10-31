@@ -6,10 +6,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/roothash-pay/roothash-chain/common/foundry"
-	"github.com/roothash-pay/roothash-chain/common/genesis"
-	"github.com/roothash-pay/roothash-chain/rhs-deployer/pkg/deployer/state"
-	"github.com/roothash-pay/roothash-chain/rhs-service/eth"
+	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/state"
+	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
 )
 
 func SealL1DevGenesis(env *Env, intent *state.Intent, st *state.State) error {
