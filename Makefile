@@ -10,16 +10,16 @@ help: ## Prints this help message
 build: build-go build-contracts ## Builds Go components and contracts-theweb3Chain
 .PHONY: build
 
-build-go: submodules fd-node fd-deployer## Builds fd-node and fd-deployer
+build-go: submodules dn-node dn-deployer## Builds dn-node and dn-deployer
 .PHONY: build-go
 
 build-contracts:
-	(cd packages/contracts-fd-chain && just build)
+	(cd packages/contracts-dn-chain && just build)
 .PHONY: build-contracts
 
 lint-go: ## Lints Go code with specific linters
 	golangci-lint run -E goimports,sqlclosecheck,bodyclose,asciicheck,misspell,errorlint --timeout 5m -e "errors.As" -e "errors.Is" ./...
-	golangci-lint run -E err113 --timeout 5m -e "errors.As" -e "errors.Is" ./fd-program/client/...
+	golangci-lint run -E err113 --timeout 5m -e "errors.As" -e "errors.Is" ./dn-program/client/...
 .PHONY: lint-go
 
 lint-go-fix: ## Lints Go code with specific linters and fixes reported issues
@@ -35,7 +35,7 @@ golang-docker: ## Builds Docker images for Go components using buildx
 			--progress plain \
 			--load \
 			-f docker-bake.hcl \
-			fd-node fd-supervisor
+			dn-node dn-supervisor
 .PHONY: golang-docker
 
 docker-builder-clean: ## Removes the Docker buildx builder
@@ -48,13 +48,13 @@ docker-builder: ## Creates a Docker buildx builder
 .PHONY: docker-builder
 
 # add --print to dry-run
-cross-fd-node: ## Builds cross-platform Docker image for fd-node
+cross-dn-node: ## Builds cross-platform Docker image for dn-node
 	# We don't use a buildx builder here, and just load directly into regular docker, for convenience.
 	GIT_COMMIT=$$(git rev-parse HEAD) \
 	GIT_DATE=$$(git show -s --format='%ct') \
 	IMAGE_TAGS=$$(git rev-parse HEAD),latest \
 	PLATFORMS="linux/arm64" \
-	GIT_VERSION=$(shell tags=$$(git tag --points-at $(GITCOMMIT) | grep '^fd-node/' | sed 's/fd-node\///' | sort -V); \
+	GIT_VERSION=$(shell tags=$$(git tag --points-at $(GITCOMMIT) | grep '^dn-node/' | sed 's/dn-node\///' | sort -V); \
              preferred_tag=$$(echo "$$tags" | grep -v -- '-rc' | tail -n 1); \
              if [ -z "$$preferred_tag" ]; then \
                  if [ -z "$$tags" ]; then \
@@ -71,8 +71,8 @@ cross-fd-node: ## Builds cross-platform Docker image for fd-node
 			--load \
 			--no-cache \
 			-f docker-bake.hcl \
-			fd-node
-.PHONY: cross-fd-node
+			dn-node
+.PHONY: cross-dn-node
 
 contracts-theweb3Chain-docker: ## Builds Docker image for Bedrock contracts
 	IMAGE_TAGS=$$(git rev-parse HEAD),latest \
@@ -88,28 +88,28 @@ submodules: ## Updates git submodules
 .PHONY: submodules
 
 
-fd-node: ## Builds fd-node binary
-	just $(JUSTFLAGS) ./fd-node/fd-node
-.PHONY: fd-node
+dn-node: ## Builds dn-node binary
+	just $(JUSTFLAGS) ./dn-node/dn-node
+.PHONY: dn-node
 
-generate-mocks-fd-node: ## Generates mocks for fd-node
-	make -C ./fd-node generate-mocks
-.PHONY: generate-mocks-fd-node
+generate-mocks-dn-node: ## Generates mocks for dn-node
+	make -C ./dn-node generate-mocks
+.PHONY: generate-mocks-dn-node
 
-generate-mocks-fd-service: ## Generates mocks for fd-service
-	make -C ./fd-service generate-mocks
-.PHONY: generate-mocks-fd-service
+generate-mocks-dn-service: ## Generates mocks for dn-service
+	make -C ./dn-service generate-mocks
+.PHONY: generate-mocks-dn-service
 
-fd-deployer: ## Builds fd-deployer binary
-	just $(JUSTFLAGS) ./fd-deployer/build
-.PHONY: fd-deployer
+dn-deployer: ## Builds dn-deployer binary
+	just $(JUSTFLAGS) ./dn-deployer/build
+.PHONY: dn-deployer
 
-fd-program: ## Builds fd-program binary
-	make -C ./fd-program fd-program
-.PHONY: fd-program
+dn-program: ## Builds dn-program binary
+	make -C ./dn-program dn-program
+.PHONY: dn-program
 
 reproducible-prestate:   ## Builds reproducible-prestate binary
-	make -C ./fd-program reproducible-prestate
+	make -C ./dn-program reproducible-prestate
 .PHONY: reproducible-prestate
 
 mod-tidy: ## Cleans up unused dependencies in Go modules
@@ -123,7 +123,7 @@ mod-tidy: ## Cleans up unused dependencies in Go modules
 
 clean: ## Removes all generated files under bin/
 	rm -rf ./bin
-	cd packages/contracts-fd-chain/ && forge clean
+	cd packages/contracts-dn-chain/ && forge clean
 .PHONY: clean
 
 nuke: clean ## Completely clean the project directory
@@ -131,8 +131,8 @@ nuke: clean ## Completely clean the project directory
 .PHONY: nuke
 
 test-unit: ## Runs unit tests for all components
-	make -C ./fd-node test
-	(cd packages/contracts-fd-chain && just test)
+	make -C ./dn-node test
+	(cd packages/contracts-dn-chain && just test)
 .PHONY: test-unit
 
 # Remove the baseline-commit to generate a base reading & show all issues

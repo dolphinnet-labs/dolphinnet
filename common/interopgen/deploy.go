@@ -14,13 +14,13 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/flexdeal-chain/fd-chain/common/foundry"
-	"github.com/flexdeal-chain/fd-chain/common/genesis"
-	"github.com/flexdeal-chain/fd-chain/common/genesis/beacondeposit"
-	"github.com/flexdeal-chain/fd-chain/common/script"
-	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/interop"
-	"github.com/flexdeal-chain/fd-chain/fd-deployer/pkg/deployer/opcm"
-	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	"github.com/dolphinnet-labs/dolphinnet/common/foundry"
+	"github.com/dolphinnet-labs/dolphinnet/common/genesis"
+	"github.com/dolphinnet-labs/dolphinnet/common/genesis/beacondeposit"
+	"github.com/dolphinnet-labs/dolphinnet/common/script"
+	"github.com/dolphinnet-labs/dolphinnet/dn-deployer/pkg/deployer/interop"
+	"github.com/dolphinnet-labs/dolphinnet/dn-deployer/pkg/deployer/opcm"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/eth"
 )
 
 var (

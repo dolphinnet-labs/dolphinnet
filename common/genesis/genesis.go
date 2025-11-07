@@ -6,14 +6,14 @@ import (
 	"math/big"
 	"time"
 
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/eth"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/predeploys"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/consensus/misc/eip1559"
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
-	"github.com/flexdeal-chain/fd-chain/fd-service/predeploys"
 )
 
 // defaultGasLimit represents the default gas limit for a genesis block.

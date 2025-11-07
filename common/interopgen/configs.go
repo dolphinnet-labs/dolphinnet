@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/dolphinnet-labs/dolphinnet/common/genesis"
 )
 
 type L1Config struct {

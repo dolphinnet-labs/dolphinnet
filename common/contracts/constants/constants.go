@@ -1,8 +1,8 @@
 package constants
 
 import (
+	"github.com/dolphinnet-labs/dolphinnet/common/types"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/flexdeal-chain/fd-chain/common/types"
 )
 
 var (

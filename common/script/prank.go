@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/flexdeal-chain/fd-chain/common/script/addresses"
+	"github.com/dolphinnet-labs/dolphinnet/common/script/addresses"
 
 	"github.com/holiman/uint256"
 

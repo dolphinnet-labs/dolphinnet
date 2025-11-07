@@ -3,7 +3,7 @@ package interopgen
 import (
 	"github.com/ethereum/go-ethereum/core"
 
-	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
+	"github.com/dolphinnet-labs/dolphinnet/dn-node/rollup"
 )
 
 type L1Output struct {

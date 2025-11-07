@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/flexdeal-chain/fd-chain/common/foundry"
-	"github.com/flexdeal-chain/fd-chain/common/script/addresses"
+	"github.com/dolphinnet-labs/dolphinnet/common/foundry"
+	"github.com/dolphinnet-labs/dolphinnet/common/script/addresses"
 	"github.com/holiman/uint256"
 
 	"github.com/ethereum/go-ethereum/accounts/abi"

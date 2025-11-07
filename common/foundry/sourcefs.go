@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/flexdeal-chain/fd-chain/common/srcmap"
+	"github.com/dolphinnet-labs/dolphinnet/common/srcmap"
 )
 
 // SourceMapFS wraps an FS to provide source-maps.

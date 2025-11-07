@@ -8,8 +8,8 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/flexdeal-chain/fd-chain/common/devkeys"
-	"github.com/flexdeal-chain/fd-chain/common/genesis"
+	"github.com/dolphinnet-labs/dolphinnet/common/devkeys"
+	"github.com/dolphinnet-labs/dolphinnet/common/genesis"
 )
 
 type InteropDevRecipe struct {

@@ -1,4 +1,4 @@
-module github.com/flexdeal-chain/fd-chain
+module github.com/dolphinnet-labs/dolphinnet
 
 go 1.22.0
 

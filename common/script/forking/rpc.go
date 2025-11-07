@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/flexdeal-chain/fd-chain/fd-service/retry"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/retry"
 )
 
 type RPCClient interface {

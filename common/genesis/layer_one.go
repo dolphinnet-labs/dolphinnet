@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/flexdeal-chain/fd-chain/common/foundry"
+	"github.com/dolphinnet-labs/dolphinnet/common/foundry"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/flexdeal-chain/fd-chain/common/genesis/beacondeposit"
-	"github.com/flexdeal-chain/fd-chain/fd-service/predeploys"
+	"github.com/dolphinnet-labs/dolphinnet/common/genesis/beacondeposit"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/predeploys"
 )
 
 // PrecompileCount represents the number of precompile addresses

@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/flexdeal-chain/fd-chain/common/proofs/prestate"
+	"github.com/dolphinnet-labs/dolphinnet/common/proofs/prestate"
 )
 
 type chainConfig struct {

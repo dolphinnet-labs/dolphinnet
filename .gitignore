@@ -20,10 +20,10 @@ cache
 !op-chain-ops/foundry/testdata/srcmaps/cache
 !op-chain-ops/foundry/testdata/srcmaps/artifacts
 
-#!fd-deployer/pkg/deployer/artifacts
+#!dn-deployer/pkg/deployer/artifacts
 
 
-packages/contracts-fd-chain/deployments/anvil
+packages/contracts-dn-chain/deployments/anvil
 
 # vim
 *.sw*

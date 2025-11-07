@@ -1,0 +1,16 @@
+# exclude everything by default to limit context size and cache miss
+*
+# module definition
+!go.*
+# internal dependencies
+!cannon/
+!op-alt-da/
+!dn-node/
+!op-preimage/
+!dn-program/
+!dn-service/
+!dn-supervisor/
+
+**/bin
+**/testdata
+**/tests

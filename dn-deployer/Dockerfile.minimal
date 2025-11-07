@@ -1,0 +1,3 @@
+FROM scratch
+ENTRYPOINT ["/dn-deployer"]
+COPY dn-deployer /dn-deployer

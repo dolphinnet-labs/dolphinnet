@@ -1,3 +1,0 @@
-FROM scratch
-ENTRYPOINT ["/fd-deployer"]
-COPY fd-deployer /fd-deployer

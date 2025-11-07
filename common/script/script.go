@@ -26,11 +26,11 @@ import (
 	"github.com/ethereum/go-ethereum/triedb"
 	"github.com/ethereum/go-ethereum/triedb/hashdb"
 
-	"github.com/flexdeal-chain/fd-chain/common/script/addresses"
+	"github.com/dolphinnet-labs/dolphinnet/common/script/addresses"
 
-	"github.com/flexdeal-chain/fd-chain/common/foundry"
-	"github.com/flexdeal-chain/fd-chain/common/script/forking"
-	"github.com/flexdeal-chain/fd-chain/common/srcmap"
+	"github.com/dolphinnet-labs/dolphinnet/common/foundry"
+	"github.com/dolphinnet-labs/dolphinnet/common/script/forking"
+	"github.com/dolphinnet-labs/dolphinnet/common/srcmap"
 )
 
 // jumpHistory is the amount of successful jumps to track for debugging.

@@ -14,8 +14,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
-	"github.com/flexdeal-chain/fd-chain/fd-service/testlog"
+	"github.com/dolphinnet-labs/dolphinnet/dn-node/rollup"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/testlog"
 )
 
 func TestConfigDataMarshalUnmarshal(t *testing.T) {

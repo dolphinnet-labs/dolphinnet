@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/dolphinnet-labs/dolphinnet/common/script/forking"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/flexdeal-chain/fd-chain/common/script/forking"
 )
 
 // ForkOption modifies a ForkConfig, and can be used by Host internals,

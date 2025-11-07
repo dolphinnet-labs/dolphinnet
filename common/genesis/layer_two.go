@@ -13,9 +13,9 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/flexdeal-chain/fd-chain/common/foundry"
-	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
-	"github.com/flexdeal-chain/fd-chain/fd-service/predeploys"
+	"github.com/dolphinnet-labs/dolphinnet/common/foundry"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/eth"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/predeploys"
 )
 
 type L2AllocsMode string

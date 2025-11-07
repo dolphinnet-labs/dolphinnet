@@ -16,9 +16,9 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	opparams "github.com/flexdeal-chain/fd-chain/fd-node/params"
-	"github.com/flexdeal-chain/fd-chain/fd-node/rollup"
-	"github.com/flexdeal-chain/fd-chain/fd-service/eth"
+	opparams "github.com/dolphinnet-labs/dolphinnet/dn-node/params"
+	"github.com/dolphinnet-labs/dolphinnet/dn-node/rollup"
+	"github.com/dolphinnet-labs/dolphinnet/dn-service/eth"
 )
 
 var (
@@ -604,7 +604,7 @@ type L2CoreDeployConfig struct {
 	// BatchInboxAddress is the L1 account that batches are sent to.
 	BatchInboxAddress common.Address `json:"batchInboxAddress"`
 
-	// SystemConfigStartBlock represents the block at which the fd-node should start syncing
+	// SystemConfigStartBlock represents the block at which the dn-node should start syncing
 	// from. It is an override to set this value on legacy networks where it is not set by
 	// default. It can be removed once all networks have this value set in their storage.
 	SystemConfigStartBlock uint64 `json:"systemConfigStartBlock"`

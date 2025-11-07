@@ -3,7 +3,7 @@ package script
 import (
 	"math/big"
 
-	"github.com/flexdeal-chain/fd-chain/common/script/addresses"
+	"github.com/dolphinnet-labs/dolphinnet/common/script/addresses"
 
 	"github.com/ethereum/go-ethereum/common"
 )

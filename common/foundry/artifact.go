@@ -8,10 +8,10 @@ import (
 	"os"
 	"strings"
 
+	"github.com/dolphinnet-labs/dolphinnet/common/solc"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/flexdeal-chain/fd-chain/common/solc"
 )
 
 // Artifact represents a foundry compilation artifact.
