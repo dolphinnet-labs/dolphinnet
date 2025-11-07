@@ -17,6 +17,8 @@ dist
 artifacts
 cache
 
+!dn-deployer/pkg/deployer/artifacts
+
 !op-chain-ops/foundry/testdata/srcmaps/cache
 !op-chain-ops/foundry/testdata/srcmaps/artifacts
 

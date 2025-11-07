@@ -141,6 +141,6 @@ semgrep: ## Runs Semgrep checks
 	SEMGREP_REPO_NAME=/roothash-pay/theweb3-chain semgrep ci --baseline-commit=$(DEV_REF)
 .PHONY: semgrep
 
-update-rhs-geth: ## Updates the Geth version used in the project
-	./ops/scripts/update-rhs-geth.py
-.PHONY: update-rhs-geth
+update-dn-geth: ## Updates the Geth version used in the project
+	./ops/scripts/update-dn-geth.py
+.PHONY: update-dn-geth
